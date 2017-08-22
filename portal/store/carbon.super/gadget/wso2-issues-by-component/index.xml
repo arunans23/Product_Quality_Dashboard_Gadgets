@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="Issues from github by component"
+                 height="350"
+                 description="Drill Down Enabled barchart for showing issues by github"
+                 tags="drill-down">
+        <Require feature="dynamic-height"/>
+        <Require feature="pubsub-2"/>
+    </ModulePrefs>
+    <Content type="html">
+        <![CDATA[
+
+            <script src="code/highcharts.js"></script>
+            <script src="code/modules/data.js"></script>
+            <script src="code/modules/drilldown.js"></script>
+
+            <div id="container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
+
+        
+            <script type="text/javascript" src="js/app.js"></script>
+
+            <script>
+                initChart();
+            </script>
+        ]]>
+    </Content>
+</Module>

@@ -1,0 +1,16 @@
+{
+  "id": "wso2-barchart-jira",
+  "title": "Issues by Product and Component - Jira",
+  "type": "gadget",
+  "thumbnail": "store://gadget/wso2-issues-by-product-and-component-jira/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/wso2-issues-by-product-and-component-jira/index.xml"
+  },
+  "notify": {
+    "product": {
+      "type": "product",
+      "description": "This notifies the selected product"
+    } 
+  }
+}

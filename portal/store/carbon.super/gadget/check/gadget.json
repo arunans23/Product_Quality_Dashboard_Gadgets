@@ -1,0 +1,24 @@
+{
+  "id": "check",
+  "title": "check",
+  "type": "gadget",
+  "thumbnail": "store://gadget/wso2-issues-by-product-and-component-github/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/check/index.xml"
+  },
+  "notify": {
+    "publisher": {
+      "type": "message",
+      "description": "This notifies the selected product"
+    }
+  },
+
+"listen":{
+	"subscriber":{
+		"type": "message",
+		"description":"This checks"		
+}
+	}
+  
+}

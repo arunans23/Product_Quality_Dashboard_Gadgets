@@ -1,0 +1,16 @@
+{
+  "id": "wso2-barchart-github",
+  "title": "Issues by Product and Component - Github",
+  "type": "gadget",
+  "thumbnail": "store://gadget/wso2-issues-by-product-and-component-github/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/wso2-issues-by-product-and-component-github/index.xml"
+  },
+  "notify": {
+    "product": {
+      "type": "product",
+      "description": "This notifies the selected product"
+    } 
+  }
+}

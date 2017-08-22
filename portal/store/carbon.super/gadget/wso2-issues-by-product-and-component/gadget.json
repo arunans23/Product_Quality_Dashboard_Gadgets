@@ -1,0 +1,26 @@
+{
+  "id": "wso2-barchart",
+  "title": "Issues by Product and Component",
+  "type": "gadget",
+  "thumbnail": "store://gadget/wso2-issues-by-product-and-component/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/wso2-issues-by-product-and-component/index.xml"
+  },
+  "notify": {
+    "product": {
+      "type": "product",
+      "description": "This notifies the selected product"
+    },
+    "component": {
+      "type": "component",
+      "description": "This notifies the selected component"
+    }
+  },
+  "listen": {
+    "state":{
+      "type": "state",
+      "description": "Used to listen to state channel"
+    }
+  }
+}

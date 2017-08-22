@@ -1,0 +1,26 @@
+{
+  "id": "wso2-donutcharts",
+  "title": "Issues by platform",
+  "type": "gadget",
+  "thumbnail": "store://gadget/wso2-issues-by-platform/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/wso2-issues-by-platform/index.xml"
+  },
+  "notify": {
+    "platform": {
+      "type": "platform",
+      "description": "This notifies the selected platform"
+    }
+  },
+  "listen": {
+    "product": {
+      "type": "product",
+      "description": "Used to filter based on product"
+    },
+    "state": {
+      "type": "state",
+      "description": "Used to filter based on state"
+    }
+  }
+}

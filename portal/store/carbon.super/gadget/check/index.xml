@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="check"
+                 height="350"
+                 description="Drill Down Enabled barchart for showing issues by github"
+                 tags="drill-down">
+        <Require feature="dynamic-height"/>
+        <Require feature="pubsub-2"/>
+    </ModulePrefs>
+    <Content type="html">
+        <![CDATA[
+
+            <p>check</p>
+
+		<script>
+		var message = "Publisher channel"; 
+gadgets.Hub.publish('publisher', message);
+
+gadgets.HubSettings.onConnect = function() {
+    gadgets.Hub.subscribe('subscriber', function(topic, data, subscriberData) {
+        // Rest of the call back code goes here
+    });
+};
+	</script>
+        ]]>
+    </Content>
+</Module>

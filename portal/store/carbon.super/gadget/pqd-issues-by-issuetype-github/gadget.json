@@ -1,0 +1,34 @@
+{
+  "id": "pqd-piechart-issuetype-github",
+  "title": "Issues by IssueType - Github",
+  "type": "gadget",
+  "thumbnail": "store://gadget/pqd-issues-by-issuetype-github/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/pqd-issues-by-issuetype-github/index.xml"
+  },
+  "notify": {
+    "issue-type":{
+      "type": "issue-type",
+      "description": "This notifies the selected issue-type"
+    }
+  },
+  "listen": {
+    "product":{
+      "type": "product",
+      "description": "Used to listen to product channel"
+    },
+    "product-version":{
+      "type": "version",
+      "description": "Used to listen to prodcut version channel"
+    },
+    "component": {
+      "type": "component",
+      "description": "This listens to the selected component"
+    },
+    "component-version": {
+      "type": "version",
+      "description": "This listens the selected component version"
+    }
+  }
+}

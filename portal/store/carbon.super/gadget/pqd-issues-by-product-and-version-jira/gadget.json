@@ -1,0 +1,30 @@
+{
+  "id": "pqd-barchart-jira",
+  "title": "Issues by Product and Version - Jira",
+  "type": "gadget",
+  "thumbnail": "store://gadget/pqd-issues-by-product-and-version-jira/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/pqd-issues-by-product-and-version-jira/index.xml"
+  },
+  "notify": {
+    "product": {
+      "type": "product",
+      "description": "This notifies the selected product"
+    },
+    "product-version": {
+      "type": "version",
+      "description": "This notifies the selected product version"
+    },
+    "product-state": {
+      "type": "state",
+      "description": "This notifies the selected product state"
+    }
+  },
+  "listen": {
+    "component-state": {
+      "type": "state",
+      "description": "This listens to the component-state channel"
+    }
+  }
+}

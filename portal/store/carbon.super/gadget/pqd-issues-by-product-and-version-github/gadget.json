@@ -1,0 +1,20 @@
+{
+  "id": "pqd-barchart-github",
+  "title": "Issues by Product and Version - Github",
+  "type": "gadget",
+  "thumbnail": "store://gadget/pqd-issues-by-product-and-version-github/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/pqd-issues-by-product-and-version-github/index.xml"
+  },
+  "notify": {
+    "product": {
+      "type": "product",
+      "description": "This notifies the selected product"
+    },
+    "product-version": {
+      "type": "version",
+      "description": "This notifies the selected product version"
+    } 
+  }
+}

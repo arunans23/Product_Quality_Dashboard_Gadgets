@@ -14,14 +14,14 @@
 
 		<script>
 		var message = "Publisher channel"; 
-gadgets.Hub.publish('publisher', message);
+        gadgets.Hub.publish('publisher', message);
 
-gadgets.HubSettings.onConnect = function() {
-    gadgets.Hub.subscribe('subscriber', function(topic, data, subscriberData) {
-        // Rest of the call back code goes here
-    });
-};
-	</script>
+        gadgets.HubSettings.onConnect = function() {
+            gadgets.Hub.subscribe('subscriber', function(topic, data, subscriberData) {
+                // Rest of the call back code goes here
+            });
+        };
+    	</script>
         ]]>
     </Content>
 </Module>

@@ -1,0 +1,38 @@
+{
+  "id": "pqd-piechart-issuetype-jira",
+  "title": "Issues by IssueType - Jira",
+  "type": "gadget",
+  "thumbnail": "store://gadget/pqd-issues-by-severity-github/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/pqd-issues-by-issuetype-github/index.xml"
+  },
+  "notify": {
+    "severity":{
+      "type": "severity",
+      "description": "This notifies the selected severity"
+    }
+  },
+  "listen": {
+    "product":{
+      "type": "product",
+      "description": "Used to listen to product channel"
+    },
+    "product-version":{
+      "type": "version",
+      "description": "Used to listen to prodcut version channel"
+    },
+    "component": {
+      "type": "component",
+      "description": "This listens to the selected component"
+    },
+    "component-version": {
+      "type": "version",
+      "description": "This listens the selected component version"
+    },
+    "issue-type":{
+      "type": "type",
+      "description": "This listens to the selected issue-type"
+    }
+  }
+}

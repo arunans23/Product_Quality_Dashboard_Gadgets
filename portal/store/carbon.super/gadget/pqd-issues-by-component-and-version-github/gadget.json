@@ -1,0 +1,34 @@
+{
+  "id": "pqd-piechart-component-github",
+  "title": "Issues by Component and Version - Github",
+  "type": "gadget",
+  "thumbnail": "store://gadget/pqd-issues-by-component-and-version-github/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/pqd-issues-by-component-and-version-github/index.xml"
+  },
+  "notify": {
+    "component": {
+      "type": "component",
+      "description": "This notifies the selected component"
+    },
+    "component-version": {
+      "type": "version",
+      "description": "This notifies the selected component version"
+    }
+  },
+  "listen": {
+    "product":{
+      "type": "product",
+      "description": "Used to listen to product channel"
+    },
+    "product-version":{
+      "type": "version",
+      "description": "Used to listen to product version channel"
+    },
+    "issue-type":{
+      "type": "issue-type",
+      "description": "Used to listen to issue type channel"
+    }
+  }
+}

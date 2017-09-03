@@ -1,11 +1,11 @@
 {
-  "id": "pqd-piechart-issuetype-jira",
-  "title": "Issues by IssueType - Jira",
+  "id": "pqd-piechart-severity-jira",
+  "title": "Issues by Severity - Jira",
   "type": "gadget",
-  "thumbnail": "store://gadget/pqd-issues-by-severity-github/images/index.png",
+  "thumbnail": "store://gadget/pqd-issues-by-severity-jira/images/index.png",
   "options": {},
   "data": {
-    "url": "store://gadget/pqd-issues-by-issuetype-github/index.xml"
+    "url": "store://gadget/pqd-issues-by-severity-jira/index.xml"
   },
   "notify": {
     "severity":{
@@ -26,13 +26,21 @@
       "type": "component",
       "description": "This listens to the selected component"
     },
-    "component-version": {
-      "type": "version",
-      "description": "This listens the selected component version"
-    },
     "issue-type":{
-      "type": "type",
+      "type": "issue-type",
       "description": "This listens to the selected issue-type"
+    },
+    "product-state":{
+      "type": "state",
+      "description": "This listens to the product channel"
+    },
+    "component-state":{
+      "type": "state",
+      "description": "This listens to the component channel"
+    },
+    "issuetype-state":{
+      "type": "state",
+      "description": "This listens to the issuetype channel"
     }
   }
 }

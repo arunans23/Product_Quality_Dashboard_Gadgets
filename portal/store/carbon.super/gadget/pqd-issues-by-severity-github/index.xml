@@ -15,8 +15,9 @@
         <script src="code/modules/drilldown.js"></script>
 
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/Chart.js"></script>
 
-        <div id="container" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+        <canvas id="myChart" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></canvas>
 
         
 

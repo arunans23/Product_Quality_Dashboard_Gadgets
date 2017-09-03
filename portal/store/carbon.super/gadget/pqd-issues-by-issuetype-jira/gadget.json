@@ -11,6 +11,10 @@
     "issue-type":{
       "type": "issue-type",
       "description": "This notifies the selected issue-type"
+    }, 
+    "issuetype-state":{
+      "type": "state",
+      "description": "This notifies the selected issuetype state"
     }
   },
   "listen": {
@@ -21,6 +25,10 @@
     "component-state": {
       "type": "state",
       "description": "Used to listen to component state channel"
+    },
+    "severity-state": {
+      "type": "state",
+      "description": "Used to listen to severity state channel"
     },
     "product":{
       "type": "product",

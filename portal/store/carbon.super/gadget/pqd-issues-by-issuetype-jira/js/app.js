@@ -3,7 +3,7 @@ var WSO2_PRODUCT_COMPONENT_ISSUES_DATA;
 var PRODUCT_CHANNEL = "product";
 var PRODUCT_VERSION_CHANNEL = "product-version";
 var COMPONENT_CHANNEL = "component";
-var ISSUETYPE_CHANNEL = "issuetype";
+var ISSUETYPE_CHANNEL = "issue-type";
 var SEVERITY_TYPE_CHANNEL = "severity";
 
 var PRODUCT_STATE_CHANNEL = "product-state";
@@ -117,8 +117,9 @@ function callbackForStateChannel(state){
                                         events: {
                                             click: function(e){
                                                 gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
-                                                gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "13");
-                                                current
+                                                gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "14");
+                                                currentState = "14";
+                                                currentIssueType = e.point.name;
                                         }
                                     }}];
 
@@ -163,7 +164,6 @@ function callbackForStateChannel(state){
             }
             break;
         case '13':
-            debugger;
             if (currentProduct && currentComponent){
                 productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
                 var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);

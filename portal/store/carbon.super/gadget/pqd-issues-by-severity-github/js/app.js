@@ -132,52 +132,73 @@ gadgets.HubSettings.onConnect = function () {
 // }
 
 function createChart(){
-
-    
+    var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["M", "T", "W", "R", "F", "S", "S"],
+    datasets: [{
+      label: 'apples',
+      data: [12, 19, 3, 17, 28, 24, 7]
+    }, {
+      label: 'oranges',
+      data: [30, 29, 5, 5, 20, 3, 10]
+    }]
+  }
+});
     // Build the chart
-    Highcharts.chart('container', {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
-        },
-        title: {
-            text: 'Severity'
-        },
-        credits: {
-            text: "source : github"
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.y}</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: false
-                },
-                showInLegend: true
-            }
-        },
-        series: [{
-            name: 'Serverity',
-            colorByPoint: true,
-            data: [{
-                name: 'L1',
-                y: 431
-            }, {
-                name: 'L2',
-                y: 456
-            }, {
-                name: 'L3',
-                y: 456
-            }, {
-                name: 'Unknown',
-                y: 541
-            }]
-        }]
-    });
+    // Highcharts.chart('container', {
+    //     chart: {
+    //         plotBackgroundColor: null,
+    //         plotBorderWidth: null,
+    //         plotShadow: false,
+    //         type: 'pie'
+    //     },
+    //     title: {
+    //         text: 'Severity'
+    //     },
+    //     credits: {
+    //         text: "source : github"
+    //     },
+    //     tooltip: {
+    //         pointFormat: '{series.name}: <b>{point.y}</b>'
+    //     },
+    //     plotOptions: {
+    //         pie: {
+    //             allowPointSelect: true,
+    //             cursor: 'pointer',
+    //             dataLabels: {
+    //                 enabled: false
+    //             },
+    //             showInLegend: true
+    //         }
+    //     },
+    //     series: [{
+    //         name: 'Serverity',
+    //         colorByPoint: true,
+    //         data: [{
+    //             name: 'L1',
+    //             y: 431
+    //         }, {
+    //             name: 'L2',
+    //             y: 456
+    //         }, {
+    //             name: 'L3',
+    //             y: 456
+    //         }, {
+    //             name: 'Unknown',
+    //             y: 541
+    //         }]
+    //     }]
+    // });
 
 }
+
+function getRandomColor() {
+            var letters = '0123456789ABCDEF'.split('');
+            var color = '#';
+            for (var i = 0; i < 6; i++ ) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }

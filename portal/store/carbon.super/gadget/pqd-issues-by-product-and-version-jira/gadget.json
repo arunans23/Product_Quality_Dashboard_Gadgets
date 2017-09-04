@@ -25,6 +25,26 @@
     "component-state": {
       "type": "state",
       "description": "This listens to the component-state channel"
+    },
+    "issuetype-state": {
+      "type" : "state",
+      "description": "This listens to the issuetype state channel"
+    },
+    "severity-state": {
+      "type": "state",
+      "description": "This listens to the severity state channel"
+    },
+    "component": {
+      "type" : "component",
+      "description": "This listens to the component channel"
+    },
+    "issue-type": {
+      "type": "issue-type",
+      "description": "This listens to the issuetype channel"
+    },
+    "severity": {
+      "type": "severity",
+      "description": "This listens to the severity channel"
     }
   }
 }

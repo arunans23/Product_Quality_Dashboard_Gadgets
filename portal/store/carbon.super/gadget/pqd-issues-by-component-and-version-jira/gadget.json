@@ -33,6 +33,14 @@
     "issuetype-state":{
       "type": "state",
       "description": "Used to listen to issue type state channel"
+    },
+    "severity": {
+      "type": "severity",
+      "description": "Used to listen to the severity channel"
+    },
+    "severity-state": {
+      "type": "severity",
+      "description": "Used to listen to the severity-state channel"
     }
   }
 }

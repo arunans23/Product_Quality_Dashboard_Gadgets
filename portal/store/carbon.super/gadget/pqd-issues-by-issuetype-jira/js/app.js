@@ -36,6 +36,12 @@ gadgets.HubSettings.onConnect = function () {
                         callbackForStateChannel(message);
                     }
                 });
+                gadgets.Hub.subscribe(SEVERITY_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
+                });
                 // Subscribe to the product channel
                 gadgets.Hub.subscribe(PRODUCT_CHANNEL, function (topic, message){
                     if(message){
@@ -58,6 +64,9 @@ gadgets.HubSettings.onConnect = function () {
                 //Subscribe to the issuetype channel
                 gadgets.Hub.subscribe(SEVERITY_CHANNEL, function (topic, message) {
                     //callbackForChannels(message);
+                    if (message){
+                        currentSeverity = message;
+                    }
                 });
             };
 

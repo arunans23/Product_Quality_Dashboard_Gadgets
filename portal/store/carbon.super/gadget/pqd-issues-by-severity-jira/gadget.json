@@ -11,6 +11,10 @@
     "severity":{
       "type": "severity",
       "description": "This notifies the selected severity"
+    },
+    "severity-state": {
+      "type": "state",
+      "description": "This notifies the selected severity state"
     }
   },
   "listen": {

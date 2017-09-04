@@ -3,7 +3,7 @@ var WSO2_PRODUCT_COMPONENT_ISSUES_DATA;
 var PRODUCT_CHANNEL = "product";
 var PRODUCT_VERSION_CHANNEL = "product-version";
 var COMPONENT_CHANNEL = "component";
-var ISSUE_TYPE_CHANNEL = "issuetype";
+var ISSUE_TYPE_CHANNEL = "issue-type";
 var SEVERITY_TYPE_CHANNEL = "severity";
 
 var PRODUCT_STATE_CHANNEL = "product-state";
@@ -30,6 +30,18 @@ gadgets.HubSettings.onConnect = function () {
                         callbackForStateChannel(message);
                     }
                 });
+                gadgets.Hub.subscribe(ISSUETYPE_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
+                });
+                gadgets.Hub.subscribe(SEVERITY_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
+                });
                 // Subscribe to the product channel
                 gadgets.Hub.subscribe(PRODUCT_CHANNEL, function (topic, message){
                     if(message){
@@ -39,10 +51,16 @@ gadgets.HubSettings.onConnect = function () {
                 // Subscribe to the severity channel.
                 gadgets.Hub.subscribe(SEVERITY_CHANNEL, function (topic, message) {
                     //callbackForChannels(message);
+                    if (message){
+                        currentSeverity =  message;
+                    }
                 });
                 //Subscribe to the issuetype channel
                 gadgets.Hub.subscribe(ISSUETYPE_CHANNEL, function (topic, message) {
                     //callbackForChannels(message);
+                    if (message){
+                        currentIssueType = message;
+                    }
                 });
             };
 

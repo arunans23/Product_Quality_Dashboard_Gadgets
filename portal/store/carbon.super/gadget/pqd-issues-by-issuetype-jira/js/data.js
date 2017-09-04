@@ -19,7 +19,38 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Critical",
@@ -29,7 +60,38 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Major",
@@ -39,7 +101,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 409,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 253,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 138,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Minor",
@@ -49,7 +152,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 25,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Trivial",
@@ -59,7 +203,38 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Unknown",
@@ -69,11 +244,1964 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 478,
+                    "components": [
+                        {
+                            "name": "Sequences Management",
+                            "id": 10030,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Samples",
+                            "id": 10032,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Documentation",
+                            "id": 10033,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Core Engine",
+                            "id": 10034,
+                            "issues": 17,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Registry",
+                            "id": 10035,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Proxy Services Management",
+                            "id": 10036,
+                            "issues": 24,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Endpoints Management",
+                            "id": 10037,
+                            "issues": 16,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Properties Management",
+                            "id": 10038,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Statistics",
+                            "id": 10039,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Logging and Tracing",
+                            "id": 10040,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Administration Console",
+                            "id": 10041,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 44,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Transport",
+                            "id": 10719,
+                            "issues": 21,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Local Entries",
+                            "id": 10792,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Scheduled Tasks",
+                            "id": 10793,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "API",
+                            "id": 10795,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Deployment Synchronizer",
+                            "id": 10796,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Templates",
+                            "id": 10798,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Carbon Applications",
+                            "id": 10799,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Stores",
+                            "id": 10800,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Processors",
+                            "id": 10801,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Stratos ESB",
+                            "id": 10843,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Inbound Endpoints",
+                            "id": 11637,
+                            "issues": 22,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Analytics",
+                            "id": 11927,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Cloud Gateway",
+                            "id": 12320,
+                            "issues": 25,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "RabbitMQ Transport",
+                            "id": 12324,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Security",
+                            "id": 12325,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Blocker",
+                            "id": null,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 409,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 25,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Trivial",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Unknown",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "4.0.3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0 M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0 M5",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.6.0",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0",
+                            "id": null,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 Alpha ",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 RC2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 ",
+                            "id": null,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 Alpha ",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 M3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 M5",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 RC1 ",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 91,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1 - M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1 - RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 88,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - Alpha ",
+                            "id": null,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - Beta ",
+                            "id": null,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - M5",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - M7",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC1",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC2",
+                            "id": null,
+                            "issues": 14,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0",
+                            "id": null,
+                            "issues": 41,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Alpha",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Beta",
+                            "id": null,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Beta2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M1",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M2",
+                            "id": null,
+                            "issues": 20,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M3",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Pre-Beta2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Pre-RC",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-RC3",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-RC4",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 134,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 294,
+                    "components": [
+                        {
+                            "name": "identity-provider",
+                            "id": 10112,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "scim",
+                            "id": 10834,
+                            "issues": 34,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 14,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-mgt",
+                            "id": 10888,
+                            "issues": 28,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 20,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "carbon-authentication-framework",
+                            "id": 11034,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "claim-mgt",
+                            "id": 11035,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-mgt",
+                            "id": 11037,
+                            "issues": 14,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "passive-sts",
+                            "id": 11038,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "provisioning",
+                            "id": 11526,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "authentication-framework",
+                            "id": 11621,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "service-provider",
+                            "id": 11623,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-view",
+                            "id": 11624,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "product-is",
+                            "id": 11632,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "tenant-mgt",
+                            "id": 11634,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "workflows",
+                            "id": 11739,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-core",
+                            "id": 11740,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "application-authenticators",
+                            "id": 11741,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kerberos",
+                            "id": 11743,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "all-identity",
+                            "id": 11744,
+                            "issues": 16,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 24,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "keystore-mgt",
+                            "id": 11746,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "profiles",
+                            "id": 11939,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "carbon-identity-commons",
+                            "id": 12130,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Blocker",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 253,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Trivial",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Unknown",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "4.0.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.0.0-M2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.1.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0-M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.6.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 27,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Alpha",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Alpha-2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Beta",
+                            "id": null,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 28,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-RC",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Alpha",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta",
+                            "id": null,
+                            "issues": 14,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta2",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-GA",
+                            "id": null,
+                            "issues": 16,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-RC",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Alpha",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 51,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC3",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M1",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M3",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M1",
+                            "id": null,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M2",
+                            "id": null,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "FUTURE",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.3",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.6",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.7",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 65,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "rampart-1.6.1-wso2v16",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 161,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "gateway",
+                            "id": 10853,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "statistics",
+                            "id": 10854,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "key-validation",
+                            "id": 10855,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Management Console",
+                            "id": 10910,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Integration Tests",
+                            "id": 10912,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Throttling",
+                            "id": 10913,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "apim-integration",
+                            "id": 11748,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Publisher",
+                            "id": 11764,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Store",
+                            "id": 11765,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "admin-dashboard",
+                            "id": 11928,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Blocker",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 138,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Trivial",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "1.10.0",
+                            "id": null,
+                            "issues": 21,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.10.0-alpha",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.10.0-beta",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.10.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.7.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.8.0",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0 Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0 Beta2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0 Beta3",
+                            "id": null,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0_GREG M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.1",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 27,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Alpha",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Beta",
+                            "id": null,
+                            "issues": 16,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Beta2",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-RC4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0-RC3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Future",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Data Analytics Server",
+                    "id": 10800,
+                    "issues": 33,
+                    "components": [],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "3.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.1.0",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.0.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.0.0-M3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Improvement",
@@ -90,7 +2218,28 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Critical",
@@ -100,7 +2249,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 17,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Major",
@@ -110,7 +2300,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 95,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 230,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 35,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Minor",
@@ -120,7 +2351,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Trivial",
@@ -130,7 +2402,28 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Unknown",
@@ -140,11 +2433,1384 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 114,
+                    "components": [
+                        {
+                            "name": "Samples",
+                            "id": 10032,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Documentation",
+                            "id": 10033,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Core Engine",
+                            "id": 10034,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Registry",
+                            "id": 10035,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Proxy Services Management",
+                            "id": 10036,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Endpoints Management",
+                            "id": 10037,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Administration Console",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 12,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Transport",
+                            "id": 10719,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Scheduled Tasks",
+                            "id": 10793,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Stores",
+                            "id": 10800,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Processors",
+                            "id": 10801,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Stratos ESB",
+                            "id": 10843,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Inbound Endpoints",
+                            "id": 11637,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Cloud Gateway",
+                            "id": 12320,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Blocker",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 95,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Unknown",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "4.5.0 M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.6.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 ",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 Alpha ",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 16,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - Alpha ",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - Beta ",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0",
+                            "id": null,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Alpha",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 54,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 262,
+                    "components": [
+                        {
+                            "name": "identity-provider",
+                            "id": 10112,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 42,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "scim",
+                            "id": 10834,
+                            "issues": 12,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 22,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "openid",
+                            "id": 10836,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-mgt",
+                            "id": 10888,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "carbon-authentication-framework",
+                            "id": 11034,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "claim-mgt",
+                            "id": 11035,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-mgt",
+                            "id": 11037,
+                            "issues": 22,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "passive-sts",
+                            "id": 11038,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "provisioning",
+                            "id": 11526,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "authentication-framework",
+                            "id": 11621,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "service-provider",
+                            "id": 11623,
+                            "issues": 12,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-view",
+                            "id": 11624,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "product-is",
+                            "id": 11632,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "tenant-mgt",
+                            "id": 11634,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "workflows",
+                            "id": 11739,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-core",
+                            "id": 11740,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "application-authenticators",
+                            "id": 11741,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kerberos",
+                            "id": 11743,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "all-identity",
+                            "id": 11744,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "keystore-mgt",
+                            "id": 11746,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Blocker",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 17,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 230,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Trivial",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Unknown",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "4.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Alpha",
+                            "id": null,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Beta",
+                            "id": null,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 30,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Alpha",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-GA",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-RC",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Alpha",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Alpha2",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Beta",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 55,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M1",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC3",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.5.0-GA",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M1",
+                            "id": null,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M2",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M5",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "FUTURE",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 88,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 44,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "statistics",
+                            "id": 10854,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Throttling",
+                            "id": 10913,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Publisher",
+                            "id": 11764,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Store",
+                            "id": 11765,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "admin-dashboard",
+                            "id": 11928,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 35,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Trivial",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "1.10.0",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.10.0-alpha",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.3.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Alpha",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-RC2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 21,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Data Analytics Server",
+                    "id": 10800,
+                    "issues": 17,
+                    "components": [],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "3.0.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.1.0",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.1.0-Beta",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.0.0-M3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "New Feature",
@@ -161,7 +3827,18 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Critical",
@@ -171,7 +3848,28 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Major",
@@ -181,7 +3879,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 17,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 38,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Minor",
@@ -191,11 +3930,574 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 19,
+                    "components": [
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Cloud Gateway",
+                            "id": 12320,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "RabbitMQ Transport",
+                            "id": 12324,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 17,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "FUTURE",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 46,
+                    "components": [
+                        {
+                            "name": "identity-provider",
+                            "id": 10112,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "scim",
+                            "id": 10834,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-mgt",
+                            "id": 10888,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-mgt",
+                            "id": 11037,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "passive-sts",
+                            "id": 11038,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "authentication-framework",
+                            "id": 11621,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "service-provider",
+                            "id": 11623,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-view",
+                            "id": 11624,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "product-is",
+                            "id": 11632,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "application-authenticators",
+                            "id": 11741,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kerberos",
+                            "id": 11743,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "all-identity",
+                            "id": 11744,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oz",
+                            "id": 11749,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "profiles",
+                            "id": 11939,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Blocker",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 38,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "FUTURE",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 37,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 2,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "3.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.0-M2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Data Analytics Server",
+                    "id": 10800,
+                    "issues": 10,
+                    "components": [],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Minor",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "3.1.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Patch",
@@ -212,11 +4514,281 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 1,
+                    "components": [],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Unknown",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 10,
+                    "components": [
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "scim",
+                            "id": 10834,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-mgt",
+                            "id": 11037,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Unknown",
+                            "id": null,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "4.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-GA",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 4,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Unknown",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "1.6.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.7.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.8.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Security Vulnerability",
@@ -233,7 +4805,18 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Major",
@@ -243,11 +4826,189 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 5,
+                    "components": [
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "application-authenticators",
+                            "id": 11741,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "all-identity",
+                            "id": 11744,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Critical",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "4.6.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-M6",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 1,
+                    "components": [
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [
+                        {
+                            "name": "Major",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "version": [
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         }
     ],
     "severity": [
@@ -265,7 +5026,38 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Improvement",
@@ -275,7 +5067,28 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "New Feature",
@@ -285,12 +5098,370 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "severity": [],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 16,
+                    "components": [
+                        {
+                            "name": "Proxy Services Management",
+                            "id": 10036,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Transport",
+                            "id": 10719,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Stratos ESB",
+                            "id": 10843,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Cloud Gateway",
+                            "id": 12320,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 9,
+                    "components": [
+                        {
+                            "name": "identity-provider",
+                            "id": 10112,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "scim",
+                            "id": 10834,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "openid",
+                            "id": 10836,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-mgt",
+                            "id": 10888,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-GA",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 5,
+                    "components": [
+                        {
+                            "name": "gateway",
+                            "id": 10853,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "key-validation",
+                            "id": 10855,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Publisher",
+                            "id": 11764,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Store",
+                            "id": 11765,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Alpha",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Critical",
@@ -306,7 +5477,38 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Improvement",
@@ -316,7 +5518,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 17,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "New Feature",
@@ -326,7 +5569,28 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Security Vulnerability",
@@ -336,12 +5600,721 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "severity": [],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 37,
+                    "components": [
+                        {
+                            "name": "Samples",
+                            "id": 10032,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Proxy Services Management",
+                            "id": 10036,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Endpoints Management",
+                            "id": 10037,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Properties Management",
+                            "id": 10038,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Transport",
+                            "id": 10719,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Carbon Applications",
+                            "id": 10799,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Stores",
+                            "id": 10800,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Stratos ESB",
+                            "id": 10843,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Inbound Endpoints",
+                            "id": 11637,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Cloud Gateway",
+                            "id": 12320,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Security",
+                            "id": 12325,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.5.0 M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 M3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 RC1 ",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - Beta ",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - M5",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Alpha",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 12,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 38,
+                    "components": [
+                        {
+                            "name": "identity-provider",
+                            "id": 10112,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-mgt",
+                            "id": 10888,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "passive-sts",
+                            "id": 11038,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "provisioning",
+                            "id": 11526,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "authentication-framework",
+                            "id": 11621,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "service-provider",
+                            "id": 11623,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-view",
+                            "id": 11624,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "workflows",
+                            "id": 11739,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "application-authenticators",
+                            "id": 11741,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "all-identity",
+                            "id": 11744,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "keystore-mgt",
+                            "id": 11746,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "profiles",
+                            "id": 11939,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.5.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Alpha",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Beta",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 7,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "gateway",
+                            "id": 10853,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Throttling",
+                            "id": 10913,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Publisher",
+                            "id": 11764,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Store",
+                            "id": 11765,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "1.7.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0 Beta3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Data Analytics Server",
+                    "id": 10800,
+                    "issues": 1,
+                    "components": [],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Major",
@@ -357,7 +6330,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 409,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 253,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 138,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Improvement",
@@ -367,7 +6381,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 95,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 230,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 35,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "New Feature",
@@ -377,7 +6432,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 17,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 38,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Security Vulnerability",
@@ -387,12 +6483,1861 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "severity": [],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 521,
+                    "components": [
+                        {
+                            "name": "Sequences Management",
+                            "id": 10030,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Samples",
+                            "id": 10032,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Documentation",
+                            "id": 10033,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Core Engine",
+                            "id": 10034,
+                            "issues": 22,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Registry",
+                            "id": 10035,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Proxy Services Management",
+                            "id": 10036,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Endpoints Management",
+                            "id": 10037,
+                            "issues": 12,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Properties Management",
+                            "id": 10038,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Statistics",
+                            "id": 10039,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Logging and Tracing",
+                            "id": 10040,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Administration Console",
+                            "id": 10041,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 49,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Transport",
+                            "id": 10719,
+                            "issues": 22,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Local Entries",
+                            "id": 10792,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Scheduled Tasks",
+                            "id": 10793,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "API",
+                            "id": 10795,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Deployment Synchronizer",
+                            "id": 10796,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Templates",
+                            "id": 10798,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Carbon Applications",
+                            "id": 10799,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Stores",
+                            "id": 10800,
+                            "issues": 12,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Processors",
+                            "id": 10801,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Stratos ESB",
+                            "id": 10843,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Inbound Endpoints",
+                            "id": 11637,
+                            "issues": 21,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Analytics",
+                            "id": 11927,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Cloud Gateway",
+                            "id": 12320,
+                            "issues": 20,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "RabbitMQ Transport",
+                            "id": 12324,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.0.3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0 M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0 M5",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.6.0",
+                            "id": null,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0",
+                            "id": null,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 Alpha ",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 RC2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 ",
+                            "id": null,
+                            "issues": 12,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 Alpha ",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 M5",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.0 RC1 ",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 94,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1 - M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1 - RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 92,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - Alpha ",
+                            "id": null,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - Beta ",
+                            "id": null,
+                            "issues": 20,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - M5",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - M7",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC1",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC2",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0",
+                            "id": null,
+                            "issues": 39,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Alpha",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Beta",
+                            "id": null,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Beta2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M1",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M2",
+                            "id": null,
+                            "issues": 22,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M3",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Pre-Beta2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Pre-RC",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-RC3",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-RC4",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 172,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 525,
+                    "components": [
+                        {
+                            "name": "identity-provider",
+                            "id": 10112,
+                            "issues": 21,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 61,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "scim",
+                            "id": 10834,
+                            "issues": 45,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 34,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "openid",
+                            "id": 10836,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-mgt",
+                            "id": 10888,
+                            "issues": 39,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 36,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "carbon-authentication-framework",
+                            "id": 11034,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "claim-mgt",
+                            "id": 11035,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-mgt",
+                            "id": 11037,
+                            "issues": 35,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "passive-sts",
+                            "id": 11038,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "provisioning",
+                            "id": 11526,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "authentication-framework",
+                            "id": 11621,
+                            "issues": 25,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "service-provider",
+                            "id": 11623,
+                            "issues": 21,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-view",
+                            "id": 11624,
+                            "issues": 9,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "product-is",
+                            "id": 11632,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "tenant-mgt",
+                            "id": 11634,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "workflows",
+                            "id": 11739,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-core",
+                            "id": 11740,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "application-authenticators",
+                            "id": 11741,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kerberos",
+                            "id": 11743,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "all-identity",
+                            "id": 11744,
+                            "issues": 26,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "keystore-mgt",
+                            "id": 11746,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "profiles",
+                            "id": 11939,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "carbon-identity-commons",
+                            "id": 12130,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.0.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.1.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.5.0-M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.6.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 31,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Alpha",
+                            "id": null,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Alpha-2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Beta",
+                            "id": null,
+                            "issues": 15,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 54,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-M6",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-RC",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Alpha",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta",
+                            "id": null,
+                            "issues": 20,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta2",
+                            "id": null,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-GA",
+                            "id": null,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-RC",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Alpha",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Alpha2",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-Beta",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 92,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M1",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC2",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC3",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M1",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M3",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.5.0-GA",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M1",
+                            "id": null,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M2",
+                            "id": null,
+                            "issues": 18,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "6.0.0-M5",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "FUTURE",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.6",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "kernel-4.4.7",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 169,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "rampart-1.6.1-wso2v16",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 176,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 23,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 22,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "gateway",
+                            "id": 10853,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "statistics",
+                            "id": 10854,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "key-validation",
+                            "id": 10855,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Management Console",
+                            "id": 10910,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Integration Tests",
+                            "id": 10912,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Throttling",
+                            "id": 10913,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "apim-integration",
+                            "id": 11748,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Publisher",
+                            "id": 11764,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Store",
+                            "id": 11765,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "admin-dashboard",
+                            "id": 11928,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "1.10.0",
+                            "id": null,
+                            "issues": 24,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.10.0-alpha",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.10.0-beta",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.10.1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.3.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.7.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.8.0",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0 Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0 Beta2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0 Beta3",
+                            "id": null,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0_GREG M4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.1",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 27,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Alpha",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Beta",
+                            "id": null,
+                            "issues": 14,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Beta2",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-RC2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-RC4",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 16,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0-RC3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.0-M2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Future",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 45,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Data Analytics Server",
+                    "id": 10800,
+                    "issues": 53,
+                    "components": [],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "3.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.0.1",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.1.0",
+                            "id": null,
+                            "issues": 19,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.1.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.0.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.0.0-M3",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 26,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Minor",
@@ -408,7 +8353,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 25,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 13,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 11,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Improvement",
@@ -418,7 +8404,48 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "New Feature",
@@ -428,12 +8455,641 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Data Analytics Server",
+                            "id": 10800,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "severity": [],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 33,
+                    "components": [
+                        {
+                            "name": "Documentation",
+                            "id": 10033,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Proxy Services Management",
+                            "id": 10036,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Logging and Tracing",
+                            "id": 10040,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Carbon Applications",
+                            "id": 10799,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Message Processors",
+                            "id": 10801,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Inbound Endpoints",
+                            "id": 11637,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Cloud Gateway",
+                            "id": 12320,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.5.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 RC1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.7.0 RC2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "4.9.0 - RC1",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-Beta",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-RC3",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "FUTURE",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 21,
+                    "components": [
+                        {
+                            "name": "identity-provider",
+                            "id": 10112,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-mgt",
+                            "id": 10888,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-mgt",
+                            "id": 11037,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "authentication-framework",
+                            "id": 11621,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-view",
+                            "id": 11624,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "product-is",
+                            "id": 11632,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "all-identity",
+                            "id": 11744,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "oz",
+                            "id": 11749,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-Alpha",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-Beta2",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-RC",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.4.0-M1",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 8,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 17,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "REST API Store",
+                            "id": 11765,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "admin-dashboard",
+                            "id": 11928,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "1.10.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.3.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Alpha",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Beta",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 6,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Data Analytics Server",
+                    "id": 10800,
+                    "issues": 6,
+                    "components": [],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "3.1.0",
+                            "id": null,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "3.1.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Trivial",
@@ -449,7 +9105,38 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Improvement",
@@ -459,12 +9146,210 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "severity": [],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 1,
+                    "components": [
+                        {
+                            "name": "Endpoints Management",
+                            "id": 10037,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.9.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 5,
+                    "components": [
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "claim-mgt",
+                            "id": 11035,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.0.0-M2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-RC2",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 3,
+                    "components": [
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "admin-dashboard",
+                            "id": 11928,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "2.0.0-Alpha",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0-Beta",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.1.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         },
         {
             "name": "Unknown",
@@ -480,7 +9365,28 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Improvement",
@@ -490,7 +9396,28 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 },
                 {
                     "name": "Patch",
@@ -500,12 +9427,340 @@ var response = {
                     "issuetype": [],
                     "severity": [],
                     "version": [],
-                    "products": []
+                    "products": [
+                        {
+                            "name": "WSO2 ESB",
+                            "id": 10023,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 Identity Server",
+                            "id": 10041,
+                            "issues": 10,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "WSO2 API Manager",
+                            "id": 10251,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ]
                 }
             ],
             "severity": [],
             "version": [],
-            "products": []
+            "products": [
+                {
+                    "name": "WSO2 ESB",
+                    "id": 10023,
+                    "issues": 4,
+                    "components": [
+                        {
+                            "name": "Administration Console",
+                            "id": 10041,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Mediators",
+                            "id": 10718,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "Transport",
+                            "id": 10719,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.8.1",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 Identity Server",
+                    "id": 10041,
+                    "issues": 19,
+                    "components": [
+                        {
+                            "name": "oauth",
+                            "id": 10833,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "scim",
+                            "id": 10834,
+                            "issues": 3,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "saml2-sso",
+                            "id": 10835,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "user-core",
+                            "id": 11031,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "identity-mgt",
+                            "id": 11037,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "authentication-framework",
+                            "id": 11621,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "ws-security",
+                            "id": 11745,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "4.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.0.0-GA",
+                            "id": null,
+                            "issues": 4,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.1.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.2.0-GA",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "5.3.0-GA",
+                            "id": null,
+                            "issues": 7,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 5,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                },
+                {
+                    "name": "WSO2 API Manager",
+                    "id": 10251,
+                    "issues": 4,
+                    "components": [
+                        {
+                            "name": "store",
+                            "id": 10851,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "publisher",
+                            "id": 10852,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "issuetype": [],
+                    "severity": [],
+                    "version": [
+                        {
+                            "name": "1.6.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.7.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.8.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "1.9.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "2.0.0",
+                            "id": null,
+                            "issues": 1,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        },
+                        {
+                            "name": "none",
+                            "id": null,
+                            "issues": 2,
+                            "components": [],
+                            "issuetype": [],
+                            "severity": [],
+                            "version": [],
+                            "products": []
+                        }
+                    ],
+                    "products": []
+                }
+            ]
         }
     ],
     "version": [],

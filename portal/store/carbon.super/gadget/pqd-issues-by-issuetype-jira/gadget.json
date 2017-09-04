@@ -41,6 +41,10 @@
     "component": {
       "type": "component",
       "description": "This listens to the selected component"
+    },
+    "severity": {
+      "type": "severity",
+      "description": "This listens to the selected severity"
     }
   }
 }

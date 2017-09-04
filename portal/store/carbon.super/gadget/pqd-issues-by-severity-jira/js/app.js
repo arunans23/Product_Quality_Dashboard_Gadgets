@@ -281,6 +281,7 @@ function callbackForStateChannel(state){
             }
             break;
         case '134':
+        debugger;
             if (currentProduct && currentComponent && currentIssueType){
                     productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
                     var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);

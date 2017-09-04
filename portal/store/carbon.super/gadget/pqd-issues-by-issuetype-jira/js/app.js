@@ -62,7 +62,7 @@ gadgets.HubSettings.onConnect = function () {
             };
 
 function initChart(){
-    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response.data[0];
+    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response;
     currentState = '0';
     callbackForStateChannel(currentState);
 }
@@ -193,6 +193,7 @@ function callbackForStateChannel(state){
                                     }}];
 
                 currentChartTitle = "IssueTypes under " + currentProduct + "-" + currentComponent;
+                
                 createChart();
             }
             break;

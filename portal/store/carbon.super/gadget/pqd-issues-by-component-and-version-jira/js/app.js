@@ -23,6 +23,8 @@ var currentSeriesData;
 
 var currentChartTitle;
 
+var customTooltip;
+
 gadgets.HubSettings.onConnect = function () {
                 gadgets.Hub.subscribe(PRODUCT_STATE_CHANNEL, function(topic, message) {
                     if (message){
@@ -47,7 +49,7 @@ gadgets.HubSettings.onConnect = function () {
             };
 
 function initChart(){
-    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response.data[0];
+    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response;
     currentState = '0';
     callbackForStateChannel(currentState);
 }
@@ -58,13 +60,26 @@ function callbackForStateChannel(state){
         case '0':
             productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
             seriesData = [];
-            componentData = productsData[0].components;
-            for (var i = 0; i < componentData.length; i++){
-                name= componentData[i].name;
-                y= componentData[i].issues;
 
-                seriesData.push({name: name, y: y});
-            }
+            productComponentData = productsData[0].components;
+
+            var otherDataCount = 0;
+            
+            for (var i = 0; i < productComponentData.length; i++){
+                    if (productComponentData[i].issues > 10){
+                        name = productComponentData[i].name;
+                        y = productComponentData[i].issues;
+
+                        seriesData.push({name: name, y: y});
+                    } else {
+                        otherDataCount += productComponentData[i].issues;
+                    }
+                    
+                }
+
+                if (otherDataCount != 0){
+                    seriesData.push({name: 'other', y: otherDataCount});
+                }
 
             currentProduct = productsData[0].name;
 
@@ -91,11 +106,23 @@ function callbackForStateChannel(state){
             
                 var productComponentData = productsData[index].components;
                 seriesData = [];
-                for (var i = 0; i < productComponentData.length; i++){
-                    name= productComponentData[i].name;
-                    y= productComponentData[i].issues;
 
-                    seriesData.push({name: name, y: y});
+                var otherDataCount = 0;
+
+                for (var i = 0; i < productComponentData.length; i++){
+                    if (productComponentData[i].issues > 10){
+                        name = productComponentData[i].name;
+                        y = productComponentData[i].issues;
+
+                        seriesData.push({name: name, y: y});
+                    } else {
+                        otherDataCount += productComponentData[i].issues;
+                    }
+                    
+                }
+
+                if (otherDataCount != 0){
+                    seriesData.push({name: 'other', y: otherDataCount});
                 }
 
                 currentSeriesData = [{
@@ -120,6 +147,36 @@ function callbackForStateChannel(state){
         case '5':
             break;
         case '14':
+            if (currentProduct && currentIssueType){
+                productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                var index = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+
+                var productIssueTypeData = productsData[index].issuetype;
+
+                seriesData = [];
+
+                for (var i = 0; i < productIssueTypeData.length; i++) {
+                    name = productIssueTypeData[i].name;
+                    y = productIssueTypeData[i].issues;
+
+                    seriesData.push({name: name, y:y});
+                }
+
+                currentSeriesData = [{
+                    name: "Components",
+                    colorByPoint: true, data: seriesData,
+                    events: {
+                        click: function(e){
+                            gadgets.Hub.publish(COMPONENT_CHANNEL, e.point.name);
+                                                gadgets.Hub.publish(COMPONENT_STATE_CHANNEL, "143");
+                                                currentState = "143";
+                                                currentComponent = e.point.name;
+                        }
+                    }}];
+                currentChartTitle = "Components under " + currentProduct + " of type '" + currentIssueType + "'";
+                createChart();
+                
+            }
             break;
         case '15':
             break;

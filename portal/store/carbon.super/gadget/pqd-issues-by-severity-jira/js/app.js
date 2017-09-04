@@ -72,7 +72,7 @@ gadgets.HubSettings.onConnect = function () {
             };
 
 function initChart(){
-    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response.data[0];
+    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response;
     currentState = '0';
     callbackForStateChannel(currentState);
 }
@@ -244,8 +244,78 @@ function callbackForStateChannel(state){
         case '41':
             break;
         case '124':
+            if (currentProduct && currentProductVersion && currentIssueType){
+                productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+            
+                var productVersionData = productsData[productIndex].version;
+                var productVersionIndex = productVersionData.map(function(d){return d['name']}).indexOf(currentProductVersion);
+
+                var productVersionIssueTypeData = productsData[productVersionIndex].issuetype;
+                var productVersionIssueTypeIndex = productVersionIssueTypeData.map(function(d){return d['name']}).indexOf(currentIssueType);
+
+                var productVersionIssueTypeSeverityData = productVersionIssueTypeData[productVersionIssueTypeIndex].severity;
+
+                seriesData = [];
+                for (var i = 0; i < productVersionIssueTypeSeverityData.length; i++){
+                    name = productVersionIssueTypeSeverityData[i].name;
+                    y = productVersionIssueTypeSeverityData[i].issues;
+
+                    seriesData.push({name: name, y: y});
+                }
+
+                currentSeriesData = [{
+                                        name: "Severity", 
+                                        colorByPoint: true, data: seriesData,
+                                        events: {
+                                            click: function(e){
+                                                gadgets.Hub.publish(SEVERITY_CHANNEL, e.point.name);
+                                                gadgets.Hub.publish(SEVERITY_STATE_CHANNEL, "1245");
+                                                currentState = "1245";
+                                                currentSeverity = e.point.name;
+                                        }
+                                    }}];
+
+                currentChartTitle = "Severity under " + currentProduct + "-" + currentProductVersion + " of type '" + currentIssueType + "'";
+                createChart();
+            }
             break;
         case '134':
+            if (currentProduct && currentComponent && currentIssueType){
+                    productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                    var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+                
+                    var productComponentData = productsData[productIndex].components;
+                    var productComponentIndex = productComponentData.map(function(d){return d['name']}).indexOf(currentComponent);
+
+                    var productComponentIssueTypeData = productComponentData[productIndex].issuetype;
+                    var productComponentIssueTypeIndex = productComponentIssueTypeData.map(function(d){return d['name']}).indexOf(currentIssueType);
+
+                    var productComponentIssueTypeSeverityData = productComponentIssueTypeData[productComponentIssueTypeIndex].severity;
+
+                    seriesData = [];
+                    for (var i = 0; i < productComponentIssueTypeSeverityData.length; i++){
+                        name = productComponentIssueTypeSeverityData[i].name;
+                        y = productComponentIssueTypeSeverityData[i].issues;
+
+                        seriesData.push({name: name, y: y});
+                    }
+
+                    currentSeriesData = [{
+                                            name: "Severity", 
+                                            colorByPoint: true, data: seriesData,
+                                            events: {
+                                                click: function(e){
+                                                    gadgets.Hub.publish(SEVERITY_CHANNEL, e.point.name);
+                                                    gadgets.Hub.publish(SEVERITY_STATE_CHANNEL, "1345");
+                                                    currentState = "1345";
+                                                    currentSeverity = e.point.name;
+                                            }
+                                        }}];
+
+                    currentChartTitle = "Severity under " + currentProduct + "-" + currentComponent + " of type '" + currentIssueType + "'";
+                    createChart();
+                }
             break;
         case '154':
             break;

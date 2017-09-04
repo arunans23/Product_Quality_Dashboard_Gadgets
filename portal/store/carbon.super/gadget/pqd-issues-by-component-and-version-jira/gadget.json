@@ -29,6 +29,10 @@
     "issue-type":{
       "type": "issue-type",
       "description": "Used to listen to issue type channel"
+    },
+    "issuetype-state":{
+      "type": "state",
+      "description": "Used to listen to issue type state channel"
     }
   }
 }

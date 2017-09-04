@@ -133,19 +133,24 @@ gadgets.HubSettings.onConnect = function () {
 
 function createChart(){
     var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ["M", "T", "W", "R", "F", "S", "S"],
+    data = {
     datasets: [{
-      label: 'apples',
-      data: [12, 19, 3, 17, 28, 24, 7]
-    }, {
-      label: 'oranges',
-      data: [30, 29, 5, 5, 20, 3, 10]
-    }]
-  }
-});
+        data: [10, 20, 30],
+        backgroundColor: [getRandomColor(), getRandomColor(), getRandomColor()]
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'Red',
+        'Yellow',
+        'Blue'
+    ]
+};
+    var myPieChart = new Chart(ctx,{
+    type: 'pie',
+    data: data,
+    options: {}
+    });
     // Build the chart
     // Highcharts.chart('container', {
     //     chart: {

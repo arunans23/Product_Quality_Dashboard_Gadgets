@@ -13,25 +13,25 @@
       "description": "This notifies the selected product"
     },
     "product-version": {
-      "type": "version",
+      "type": "product-version",
       "description": "This notifies the selected product version"
     },
     "product-state": {
-      "type": "state",
+      "type": "product-state",
       "description": "This notifies the selected product state"
     }
   },
   "listen": {
     "component-state": {
-      "type": "state",
+      "type": "component-state",
       "description": "This listens to the component-state channel"
     },
     "issuetype-state": {
-      "type" : "state",
+      "type" : "issuetype-state",
       "description": "This listens to the issuetype state channel"
     },
     "severity-state": {
-      "type": "state",
+      "type": "severity-state",
       "description": "This listens to the severity state channel"
     },
     "component": {

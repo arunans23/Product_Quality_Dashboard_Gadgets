@@ -4,12 +4,12 @@ var PRODUCT_CHANNEL = "product";
 var PRODUCT_VERSION_CHANNEL = "product-version";
 var COMPONENT_CHANNEL = "component";
 var ISSUE_TYPE_CHANNEL = "issue-type";
-var SEVERITY_TYPE_CHANNEL = "severity";
+var SEVERITY_CHANNEL = "severity";
 
 var PRODUCT_STATE_CHANNEL = "product-state";
 var COMPONENT_STATE_CHANNEL = "component-state";
 var ISSUETYPE_STATE_CHANNEL = "issuetype-state";
-var SEVERITY_CHANNEL = "severity-state";
+var SEVERITY_STATE_CHANNEL = "severity-state";
 
 var currentProduct;
 var currentProductVersion;

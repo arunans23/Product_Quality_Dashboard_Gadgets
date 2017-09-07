@@ -4,12 +4,12 @@ var PRODUCT_CHANNEL = "product";
 var PRODUCT_VERSION_CHANNEL = "product-version";
 var COMPONENT_CHANNEL = "component";
 var ISSUETYPE_CHANNEL = "issue-type";
-var SEVERITY_TYPE_CHANNEL = "severity";
+var SEVERITY_CHANNEL = "severity";
 
 var PRODUCT_STATE_CHANNEL = "product-state";
 var COMPONENT_STATE_CHANNEL = "component-state";
 var ISSUETYPE_STATE_CHANNEL = "issuetype-state";
-var SEVERITY_CHANNEL = "severity-state";
+var SEVERITY_STATE_CHANNEL = "severity-state";
 
 var currentProduct;
 var currentProductVersion;
@@ -173,6 +173,7 @@ function callbackForStateChannel(state){
             }
             break;
         case '13':
+        debugger;
             if (currentProduct && currentComponent){
                 productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
                 var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
@@ -211,6 +212,8 @@ function callbackForStateChannel(state){
         case '51':
             break;
         case '125':
+            break;
+        case '135':
             break;
         case '512':
             break;

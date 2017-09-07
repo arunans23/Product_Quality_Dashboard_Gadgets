@@ -19,7 +19,7 @@
       "description": "Used to listen to product channel"
     },
     "product-version":{
-      "type": "version",
+      "type": "product-version",
       "description": "Used to listen to prodcut version channel"
     },
     "component": {

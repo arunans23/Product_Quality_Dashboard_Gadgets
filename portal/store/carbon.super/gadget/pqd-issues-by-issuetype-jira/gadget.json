@@ -13,21 +13,21 @@
       "description": "This notifies the selected issue-type"
     }, 
     "issuetype-state":{
-      "type": "state",
+      "type": "issuetype-state",
       "description": "This notifies the selected issuetype state"
     }
   },
   "listen": {
     "product-state": {
-      "type": "state",
+      "type": "product-state",
       "description": "Used to listen to product state channel"
     },
     "component-state": {
-      "type": "state",
+      "type": "component-state",
       "description": "Used to listen to component state channel"
     },
     "severity-state": {
-      "type": "state",
+      "type": "severity-state",
       "description": "Used to listen to severity state channel"
     },
     "product":{
@@ -35,7 +35,7 @@
       "description": "Used to listen to product channel"
     },
     "product-version":{
-      "type": "version",
+      "type": "product-version",
       "description": "Used to listen to prodcut version channel"
     },
     "component": {

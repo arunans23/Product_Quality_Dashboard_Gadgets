@@ -1,188 +1,386 @@
-// var WSO2_PRODUCT_COMPONENT_ISSUES_DATA;
+var WSO2_PRODUCT_COMPONENT_ISSUES_DATA;
 
-PRODUCT_CHANNEL = "product";
-PRODUCT_VERSION_CHANNEL = "product-version";
-COMPONENT_CHANNEL = "component";
-COMPONENT_VERSION_CHANNEL = "component-version";
-ISSUETYPE_CHANNEL = "issue-type";
+var PRODUCT_CHANNEL = "product";
+var PRODUCT_VERSION_CHANNEL = "product-version";
+var COMPONENT_CHANNEL = "component";
+var ISSUETYPE_CHANNEL = "issue-type";
+var SEVERITY_CHANNEL = "severity";
 
+var PRODUCT_STATE_CHANNEL = "product-state";
+var COMPONENT_STATE_CHANNEL = "component-state";
+var ISSUETYPE_STATE_CHANNEL = "issuetype-state";
+var SEVERITY_STATE_CHANNEL = "severity-state";
+
+var ISSUESDATA_CHANNEL = "issues-data";
+
+var currentProduct;
+var currentProductVersion;
+var currentComponent;
+var currentIssueType;
+var currentSeverity;
+
+var currentState;
+
+var currentSeriesData;
+
+var currentChartTitle;
 
 gadgets.HubSettings.onConnect = function () {
-                // Subscribe to the product channel.
-                gadgets.Hub.subscribe(PRODUCT_CHANNEL, function (topic, message) {
-                    //callbackForProductChannels(message);
-                    createChart();
+                gadgets.Hub.subscribe(PRODUCT_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
                 });
-                gadgets.Hub.subscribe(PRODUCT_VERSION_CHANNEL, function (topic, message) {
-                    //callbackForComponentChannels(message);
-                    createChart();
+                gadgets.Hub.subscribe(COMPONENT_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
                 });
+                gadgets.Hub.subscribe(SEVERITY_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
+                });
+                // Subscribe to the product channel
+                gadgets.Hub.subscribe(PRODUCT_CHANNEL, function (topic, message){
+                    if(message){
+                        currentProduct = message;
+                    }
+                });
+                //Subscribe to the product version channel
+                gadgets.Hub.subscribe(PRODUCT_VERSION_CHANNEL, function(topic, message){
+                    if(message){
+                        currentProductVersion = message;
+                    }
+                })
+                // Subscribe to the severity channel.
                 gadgets.Hub.subscribe(COMPONENT_CHANNEL, function (topic, message) {
-                    //callbackForComponentChannels(message);
-                    createChart();
+                    //callbackForChannels(message);
+                    if(message){
+                        currentComponent = message;
+                    }
                 });
-                gadgets.Hub.subscribe(COMPONENT_VERSION_CHANNEL, function (topic, message) {
-                    //callbackForComponentChannels(message);
-                    createChart();
+                //Subscribe to the issuetype channel
+                gadgets.Hub.subscribe(SEVERITY_CHANNEL, function (topic, message) {
+                    //callbackForChannels(message);
+                    if (message){
+                        currentSeverity = message;
+                    }
                 });
-
+                gadgets.Hub.subscribe(ISSUESDATA_CHANNEL, function(topic, message){
+                    if(message){
+                        initChart(message);
+                    }
+                });
             };
 
-
-// var callbackForProductChannels = function (message) {      
-//             if (message) {
-//                 subscribeData = message;
-//                 var statusData = getStatusDetailsByProductName(message);
-//                 createChart(issueTypeData);
-//             }
-           
-//         };
-
-// var callbackForComponentChannels = function (message) {        
-//             if (message) {
-//                 subscribeData = message;
-//                 var issueTypeData = getIssueTypeDetailsByComponentName(message);
-//                 createChart(issueTypeData);
-//             }
-           
-//         };
+function initChart(responseData){
+    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = responseData;
+    currentState = '0';
+    callbackForStateChannel(currentState);
+}
 
 
-// function initChart(response){
-//     this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response.data;
+function callbackForStateChannel(state){
+    switch(state){
+        case '0':
+            issueTypeData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.issuetype;
+            seriesData = [];
+            for (var i = 0; i < issueTypeData.length; i++){
+                name = issueTypeData[i].name;
+                y = issueTypeData[i].issues;
+
+                seriesData.push({name: name, y: y});
+            }
+
+            currentSeriesData = [{
+                                    name: "IssueType", 
+                                    colorByPoint: true, data: seriesData,
+                                    events: {
+                                    click: function(e){
+                                        gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                                        gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "4");
+                                        currentIssueType = e.point.name;
+                                        currentState = "4";
+                                        callbackForStateChannel(currentState);
+                                    }
+                                }}];
+
+            currentChartTitle = "";
+            createChart();
+            break;
+
+        case '1':
+            if (currentProduct){
+                productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                var index = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+            
+                var productIssuetypeData = productsData[index].issuetype;
+                seriesData = [];
+                for (var i = 0; i < productIssuetypeData.length; i++){
+                    name = productIssuetypeData[i].name;
+                    y = productIssuetypeData[i].issues;
+
+                    seriesData.push({name: name, y: y});
+                }
+
+                currentSeriesData = [{
+                                        name: "IssueType", 
+                                        colorByPoint: true, data: seriesData,
+                                        events: {
+                                            click: function(e){
+                                                gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                                                gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "14");
+                                                currentState = "14";
+                                                currentIssueType = e.point.name;
+                                        }
+                                    }}];
+
+                currentChartTitle = "under " + currentProduct;
+                createChart();
+            }
+            break;
+
+        case '5':
+            if (currentSeverity){
+                severityData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.severity;
+                var index = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.severity.map(function(d){return d['name']}).indexOf(currentSeverity);
+            
+                var severityIssueTypeData = severityData[index].issuetype;
+                seriesData = [];
+                for (var i = 0; i < severityIssueTypeData.length; i++){
+                    name = severityIssueTypeData[i].name;
+                    y = severityIssueTypeData[i].issues;
+
+                    seriesData.push({name: name, y: y});
+                }
+
+                currentSeriesData = [{
+                                        name: "IssueType", 
+                                        colorByPoint: true, data: seriesData,
+                                        events: {
+                                            click: function(e){
+                                                gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                                                gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "55");
+                                                currentState = "54";
+                                                currentIssueType = e.point.name;
+                                        }
+                                    }}];
+
+                currentChartTitle = "of severity '" + currentSeverity + "'";
+                createChart();
+            }
+            break;
+            break;
+        case '12':
+            
+            break;
+        case '13':
+            if (currentProduct && currentComponent){
+                productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+                
+                var productComponentData = productsData[productIndex].components;
+                var productComponentIndex = productComponentData.map(function(d){return d['name']}).indexOf(currentComponent);
+
+                var productComponentIssuetypeData = productComponentData[productComponentIndex].issuetype;
+                seriesData = [];
+                for (var i = 0; i < productComponentIssuetypeData.length; i++){
+                    name = productComponentIssuetypeData[i].name;
+                    y = productComponentIssuetypeData[i].issues;
+
+                    seriesData.push({name: name, y: y});
+                }
+
+                currentSeriesData = [{
+                                name: "IssueType", 
+                                colorByPoint: true, data: seriesData,
+                                events: {
+                                            click: function(e){
+                                                gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                                                gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "134");
+                                                currentState = "134";
+                                                currentIssueType = e.point.name;
+                                        }
+                                    }}];
+
+                currentChartTitle = "under " + currentProduct + "-" + currentComponent;
+                
+                createChart();
+            }
+            break;
+        case '15':
+            if (currentProduct && currentSeverity){
+                productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+                
+                var productSeverityData = productsData[productIndex].severity;
+                var productSeverityIndex = productSeverityData.map(function(d){return d['name']}).indexOf(currentSeverity);
+
+                var productSeverityIssuetypeData = productSeverityData[productSeverityIndex].issuetype;
+                seriesData = [];
+                for (var i = 0; i < productSeverityIssuetypeData.length; i++){
+                    name = productSeverityIssuetypeData[i].name;
+                    y = productSeverityIssuetypeData[i].issues;
+
+                    seriesData.push({name: name, y: y});
+                }
+
+                currentSeriesData = [{
+                                name: "IssueType", 
+                                colorByPoint: true, data: seriesData,
+                                events: {
+                                            click: function(e){
+                                                gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                                                gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "154");
+                                                currentState = "154";
+                                                currentIssueType = e.point.name;
+                                        }
+                                    }}];
+
+                currentChartTitle = "under " + currentProduct + " of severity '" + currentComponent + "'";
+                
+                createChart();
+            }
+            break;
+        case '51':
+            if (currentSeverity && currentProduct){
+                    severityData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.severity;
+                    var severityIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.severity.map(function(d){return d['name']}).indexOf(currentSeverity);
+                    
+                    var severityProductData = productsData[severityIndex].products;
+                    var severityProductIndex = severityProductData.map(function(d){return d['name']}).indexOf(currentSeverity);
+
+                    var severityProductIssuetypeData = severityProductData[severityProductIndex].issuetype;
+                    seriesData = [];
+                    for (var i = 0; i < severityProductIssuetypeData.length; i++){
+                        name = severityProductIssuetypeData[i].name;
+                        y = severityProductIssuetypeData[i].issues;
+
+                        seriesData.push({name: name, y: y});
+                    }
+
+                    currentSeriesData = [{
+                                    name: "IssueType", 
+                                    colorByPoint: true, data: seriesData,
+                                    events: {
+                                                click: function(e){
+                                                    gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                                                    gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "514");
+                                                    currentState = "514";
+                                                    currentIssueType = e.point.name;
+                                            }
+                                        }}];
+
+                    currentChartTitle = "under " + currentProduct + " of severity '" + currentComponent + "'";
+                    
+                    createChart();
+                }
+            break;
+        case '125':
+            
+            break;
+        case '135':
+            if (currentProduct && currentComponent && currentSeverity){
+                    productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                    var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+                
+                    var productComponentData = productsData[productIndex].components;
+                    var productComponentIndex = productComponentData.map(function(d){return d['name']}).indexOf(currentComponent);
+
+                    var productComponentSeverityData = productComponentData[productComponentIndex].severity;
+                    var productComponentSeverityIndex = productComponentSeverityData.map(function(d){return d['name']}).indexOf(currentSeverity);
+
+                    var productComponentSeverityIssueTypeData = productComponentSeverityData[productComponentSeverityIndex].issuetype;
+
+                    seriesData = [];
+                    for (var i = 0; i < productComponentSeverityIssueTypeData.length; i++){
+                        name = productComponentSeverityIssueTypeData[i].name;
+                        y = productComponentSeverityIssueTypeData[i].issues;
+
+                        seriesData.push({name: name, y: y});
+                    }
+
+                    currentSeriesData = [{
+                                            name: "IssueType", 
+                                            colorByPoint: true, data: seriesData,
+                                            events: {
+                                                click: function(e){
+                                                    gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                                                    gadgets.Hub.publish(ISSUETYPE_STATE_CHANNEL, "1354");
+                                                    currentState = "1354";
+                                                    currentIssueType = e.point.name;
+                                            }
+                                        }}];
+
+                    currentChartTitle = "under " + currentProduct + "-" + currentComponent + " of severity '" + currentSeverity + "'";
+                    createChart();
+                }
+            break;
+        case '512':
+            break;
+        case '513':
+            break;
+
+    }
+}
+
+
+function createChart(data){
+
     
-//     var subscribeData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA[0].name;
-
-//     var issueTypeData = getStatusDetailsByProductName(subscribeData);
-
-//     createChart(issueTypeData);
-
-
-
-// }
-
-
-// function getStatusDetailsByProductName(name){
-//     var index = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.map(function(d){return d['name']}).indexOf(name);
-//     return WSO2_PRODUCT_COMPONENT_ISSUES_DATA[index].status;
-// }
-
-// function getStatusDetailsByComponentName(name){
-//     for (var i = 0; i < WSO2_PRODUCT_COMPONENT_ISSUES_DATA.length; i++) {
-//         for (var m = 0; m < WSO2_PRODUCT_COMPONENT_ISSUES_DATA[i].component.length; m++) {
-//             if (WSO2_PRODUCT_COMPONENT_ISSUES_DATA[i].component[m].name == name){
-//                 debugger;
-//                 return WSO2_PRODUCT_COMPONENT_ISSUES_DATA[i].component[m].status;
-//             }
-//         }
-//     }
-//     return {};
-// }
-
-
-
-// function createChart(data){
-
-    
-//     // Create the chart
-//     Highcharts.chart('container', {
-//         chart: {
-//             type: 'pie',
-//         },
-//         credits: {
-//             enabled: false
-//         },
-//         title: {
-//             text: "Issues(Open) from Jira by Issue Status"
-//         },
-//         plotOptions: {
-//             series: {
-//                 borderWidth: 0,
-//                 dataLabels: {
-//                     enabled: true,
-//                     format: '<b>{point.name}</b>: {point.y}'
-//                 }
-//             }
-//         },
-
-//         tooltip: {
-//             headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-//             pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b> of total<br/>'
-//         },
-
-//         series: [{
-//             name: 'Open Issues',
-//             colorByPoint: true,
-//             data: customiseData(data)
-//         }]
-        
-//     });
-
-//     function customiseData(data){
-//         var returnData = [];
-//         for (var i = 0; i < data.length; i++) {
-//            var current = {name: data[i].name, y: data[i].issues} 
-//             returnData.push(current);
-//         }
-//         return returnData;
-//     }
-
-// }
-
-function createChart(){
-
-    
+    // Create the chart
     Highcharts.chart('container', {
         chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
+            type: 'pie',
         },
         credits: {
             text: "source : github"
         },
         title: {
-            text: 'IssueType'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.y}</b>'
+            text: currentChartTitle,
+            widthAdjust: -100,
+            style: {
+                fontSize : '14px'
+            }
         },
         plotOptions: {
             pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: false
-                },
-                showInLegend: true
-            }
-        },
-        series: [{
-            name: 'IssueTypes',
-            colorByPoint: true,
-            data: [{
-                name: 'Bug',
-                y: 431
-            }, {
-                name: 'Feature',
-                y: 456
-            }, {
-                name: 'Story',
-                y: 456
-            }, {
-                name: 'Vulnerable',
-                y: 132
-            }, {
-                name: 'Unknown',
-                y: 541
-            }],
-            events: {
-                click: function(e){
-                    gadgets.Hub.publish(ISSUETYPE_CHANNEL, e.point.name);
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
                 }
-            }
-        }]
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b><br/>'
+        },
+
+        series: currentSeriesData,
+        exporting: {
+            buttons: {
+                customButton: {
+                    symbol: 'circle',
+                    symbolStrokeWidth: 1,
+                    symbolFill: '#a4edba',
+                    symbolStroke: '#330033',
+                    _titleKey: 'backTitle',
+                    onclick: function() {
+                        initChart();
+                        gadgets.Hub.publish(COMPONENT_STATE_CHANNEL, "0");
+                    }
+                }
+            }   
+        }
+        
     });
+
 
 }

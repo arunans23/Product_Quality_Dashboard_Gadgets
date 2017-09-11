@@ -1,6 +1,6 @@
 {
   "id": "pqd-piechart-issuetype-github",
-  "title": "Issues by IssueType - Github",
+  "title": "Github issues by IssueType",
   "type": "gadget",
   "thumbnail": "store://gadget/pqd-issues-by-issuetype-github/images/index.png",
   "options": {},
@@ -11,24 +11,40 @@
     "issue-type":{
       "type": "issue-type",
       "description": "This notifies the selected issue-type"
+    }, 
+    "issuetype-state":{
+      "type": "issuetype-state",
+      "description": "This notifies the selected issuetype state"
     }
   },
   "listen": {
+    "product-state": {
+      "type": "product-state",
+      "description": "Used to listen to product state channel"
+    },
+    "component-state": {
+      "type": "component-state",
+      "description": "Used to listen to component state channel"
+    },
+    "severity-state": {
+      "type": "severity-state",
+      "description": "Used to listen to severity state channel"
+    },
     "product":{
       "type": "product",
       "description": "Used to listen to product channel"
-    },
-    "product-version":{
-      "type": "version",
-      "description": "Used to listen to prodcut version channel"
     },
     "component": {
       "type": "component",
       "description": "This listens to the selected component"
     },
-    "component-version": {
-      "type": "version",
-      "description": "This listens the selected component version"
+    "severity": {
+      "type": "severity",
+      "description": "This listens to the selected severity"
+    },
+    "issues-data": {
+      "type": "issues-data",
+      "description": "This listens to the issues data"
     }
   }
 }

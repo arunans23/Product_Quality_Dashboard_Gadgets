@@ -1,6 +1,6 @@
 {
   "id": "pqd-piechart-severity-github",
-  "title": "Issues by Severity - Github",
+  "title": "Github issues by Severity",
   "type": "gadget",
   "thumbnail": "store://gadget/pqd-issues-by-severity-github/images/index.png",
   "options": {},
@@ -11,6 +11,10 @@
     "severity":{
       "type": "severity",
       "description": "This notifies the selected severity"
+    },
+    "severity-state": {
+      "type": "severity-state",
+      "description": "This notifies the selected severity state"
     }
   },
   "listen": {
@@ -18,21 +22,29 @@
       "type": "product",
       "description": "Used to listen to product channel"
     },
-    "product-version":{
-      "type": "product-version",
-      "description": "Used to listen to prodcut version channel"
-    },
     "component": {
       "type": "component",
       "description": "This listens to the selected component"
     },
-    "component-version": {
-      "type": "version",
-      "description": "This listens the selected component version"
-    },
     "issue-type":{
       "type": "issue-type",
       "description": "This listens to the selected issue-type"
+    },
+    "product-state":{
+      "type": "product-state",
+      "description": "This listens to the product channel"
+    },
+    "component-state":{
+      "type": "component-state",
+      "description": "This listens to the component channel"
+    },
+    "issuetype-state":{
+      "type": "issuetype-state",
+      "description": "This listens to the issuetype channel"
+    },
+    "issues-data": {
+      "type": "issues-data",
+      "description": "This listens to the issues data"
     }
   }
 }

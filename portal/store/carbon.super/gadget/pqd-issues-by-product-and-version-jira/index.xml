@@ -24,24 +24,28 @@
         
             
 
-            <!-- <script>
+            <script>
 
-                fetch(`https://172.17.0.1:8246/internal/product-quality/1.0.0/github/issues/summary`, {
+                fetch(`https://10.100.4.110:8246/internal/product-quality/v1.0/jira/getJiraIssues`, {
                     headers: {
-                        Authorization: `Bearer 3f51cfe0-e1b5-3794-a01f-fcc3c3e115c9`
+                        Authorization: `Bearer 6831161b-0fe8-33cb-b4cb-df38e9acf924`
                     }
                 })
                     .then(response => response.json())
-                    .then(response => initChart(response))
+                    .then(response => initChart(response.data))
                     .catch(function(error){
                         console.log(error);
                         debugger;
-                    });
-            </script> -->
+                    });                
 
-            <script>                
-                initChart();
             </script>
+
+            <!-- <script>
+                setTimeout(function(){
+                    initChart(response);
+                }, 1000);
+            </script> -->
+            
         ]]>
     </Content>
 </Module>

@@ -2,25 +2,219 @@ var WSO2_PRODUCT_COMPONENT_ISSUES_DATA;
 
 var PRODUCT_CHANNEL = "product";
 var PRODUCT_VERSION_CHANNEL = "product-version";
+var COMPONENT_CHANNEL = "component";
+var ISSUETYPE_CHANNEL = "issue-type";
+var SEVERITY_CHANNEL = "severity";
+
+var PRODUCT_STATE_CHANNEL = "product-state";
+var COMPONENT_STATE_CHANNEL = "component-state";
+var ISSUETYPE_STATE_CHANNEL = "issuetype-state";
+var SEVERITY_STATE_CHANNEL = "severity-state";
+
+var ISSUESDATA_CHANNEL = "issues-data";
+
+var currentProduct;
+var currentProductVersion;
+var currentComponent;
+var currentIssueType;
+var currentSeverity;
+
+var currentState;
+
+var currentSeriesData;
+
+var currentChartTitle;
+
+gadgets.HubSettings.onConnect = function () {
+                gadgets.Hub.subscribe(COMPONENT_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
+                });
+                gadgets.Hub.subscribe(ISSUETYPE_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
+                });
+                gadgets.Hub.subscribe(SEVERITY_STATE_CHANNEL, function(topic, message) {
+                    if (message){
+                        currentState = message;
+                        callbackForStateChannel(message);
+                    }
+                });
+                // Subscribe to the product channel
+                gadgets.Hub.subscribe(COMPONENT_CHANNEL, function (topic, message){
+                    if(message){
+                        currentComponent = message;
+                    }
+                });
+                // Subscribe to the severity channel.
+                gadgets.Hub.subscribe(SEVERITY_CHANNEL, function (topic, message) {
+                    //callbackForChannels(message);
+                    if (message){
+                        currentSeverity =  message;
+                    }
+                });
+                //Subscribe to the issuetype channel
+                gadgets.Hub.subscribe(ISSUETYPE_CHANNEL, function (topic, message) {
+                    //callbackForChannels(message);
+                    if (message){
+                        currentIssueType = message;
+                    }
+                });
+            };
+
+function initChart(responseData){
+    this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = responseData;
+    currentState = '0';
+    gadgets.Hub.publish(ISSUESDATA_CHANNEL, responseData);
+    callbackForStateChannel(currentState);
+}
+
+
+function callbackForStateChannel(state){
+    switch(state){
+        case '0':
+                productsData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+                seriesData = [];
+                for (var i = 0; i < productsData.length; i++){
+                    name = productsData[i].name;
+                    y = productsData[i].issues;
+
+                    seriesData.push({name: name, y: y});
+                }
+
+                currentSeriesData = [{
+                                        name: "Products", 
+                                        colorByPoint: true, data: seriesData,
+                                        events: {
+                                        click: function(e){
+                                            gadgets.Hub.publish(PRODUCT_CHANNEL, e.point.name);
+                                            gadgets.Hub.publish(PRODUCT_STATE_CHANNEL, "1");
+                                            currentProduct = e.point.name;
+                                            currentState = "1";
+                                            callbackForStateChannel(currentState);
+                                        }
+                                    }}];
+
+                        currentChartTitle = "";
+                        createChart();
+            break;
+        case '1':
+
+            break;
+
+        case '4':
+            if (currentIssueType){
+            
+                issueTypeData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.issuetype;
+                issueTypeIndex = issueTypeData.map(function(d){return d['name']}).indexOf(currentIssueType);
+
+                issueTypeProductData = issueTypeData[issueTypeIndex].products;
+                
+                seriesData = [];
+
+                
+                
+                for (var i = 0; i < issueTypeProductData.length; i++){
+                        
+                            name = issueTypeProductData[i].name;
+                            y = issueTypeProductData[i].issues;
+
+                            seriesData.push({name: name, y: y});
+                        
+                            
+                        
+                        
+                    }
 
 
 
+                currentSeriesData = [{
+                                        name: "Product", 
+                                        colorByPoint: true, data: seriesData,
+                                        events: {
+                                        click: function(e){
+                                            gadgets.Hub.publish(PRODUCT_CHANNEL, e.point.name);
+                                            gadgets.Hub.publish(PRODUCT_STATE_CHANNEL, "41");
+                                            currentProduct = e.point.name;
+                                            currentState = "41";
+                                        }
+                                    }}];
 
-// function initChart(response){
-//     this.WSO2_PRODUCT_COMPONENT_ISSUES_DATA = response.data;
+                currentChartTitle = "Severity '" + currentIssueType + "' under " + currentProduct;
+                createChart();
+            }
+            break;
+        case '5':
+            if (currentSeverity){
+            
+                severityData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.issuetype;
+                severityIndex = severityData.map(function(d){return d['name']}).indexOf(currentSeverity);
 
-    
+                severityProductData = severityData[severityIndex].products;
+                
+                seriesData = [];
 
-//     data = [];
-//     for (var i = 0; i < WSO2_PRODUCT_COMPONENT_ISSUES_DATA.length; i++) {
-//         name = WSO2_PRODUCT_COMPONENT_ISSUES_DATA[i].name;
-//         y = WSO2_PRODUCT_COMPONENT_ISSUES_DATA[i].issues;
+                
+                
+                for (var i = 0; i < severityProductData.length; i++){
+                        
+                            name = severityProductData[i].name;
+                            y = severityProductData[i].issues;
 
-//         data.push({name: name, y: y});
-//     }
+                            seriesData.push({name: name, y: y});
+                        
+                            
+                        
+                        
+                    }
 
-//     createChart(data);
-// }
+
+
+                currentSeriesData = [{
+                                        name: "Product", 
+                                        colorByPoint: true, data: seriesData,
+                                        events: {
+                                        click: function(e){
+                                            gadgets.Hub.publish(PRODUCT_CHANNEL, e.point.name);
+                                            gadgets.Hub.publish(PRODUCT_STATE_CHANNEL, "51");
+                                            currentProduct = e.point.name;
+                                            currentState = "51";
+                                        }
+                                    }}];
+
+                currentChartTitle = "IssueType '" + currentIssueType + "' under " + currentProduct;
+                createChart();
+            }
+            break;
+        case '14':
+            break;
+        case '15':
+            break;
+        case '41':
+            break;
+        case '45':
+            break;
+        case '51':
+            break;
+        case '54':
+            break;
+        case '135':
+            break;
+        case '145':
+            break;
+        case '415':
+            break;
+        case '451':
+            break;
+        case '541':
+            break;
+
+    }
+}
 
 
 
@@ -90,14 +284,15 @@ function createChart(){
         chart: {
             type: 'column'
         },
+        credits:{
+            text: 'source: github'
+        },
         title: {
-            text: 'Products'
-        },
-        subtitle: {
-            text: 'Click the columns to view versions.'
-        },
-        credits: {
-            text: "source : github"
+            text: currentChartTitle,
+            widthAdjust: -100,
+            style: {
+                fontSize : '14px'
+            }
         },
         xAxis: {
             type: 'category'
@@ -126,244 +321,24 @@ function createChart(){
             pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}'
         },
 
-        series: [{
-            name: 'Products',
-            colorByPoint: true,
-            data: [{
-                name: 'ESB',
-                y: 234,
-                drilldown: 'ESB'
-            }, {
-                name: 'IS',
-                y: 251,
-                drilldown: 'IS'
-            }, {
-                name: 'APIM',
-                y: 134,
-                drilldown: 'APIM'
-            }, {
-                name: 'DAS',
-                y: 100,
-                drilldown: 'DAS'
-            }, {
-                name: 'IOT',
-                y: 201,
-                drilldown: 'IOT'
-            }],
-            events: {
-                click: function(e){
-                    gadgets.Hub.publish(PRODUCT_CHANNEL, e.point.name);
-                }
-            }
-        }],
-        drilldown: {
-            series: [{
-                name: 'ESB',
-                id: 'ESB',
-                data: [
-                    [
-                        'v11.0',
-                        24.13
-                    ],
-                    [
-                        'v8.0',
-                        17.2
-                    ],
-                    [
-                        'v9.0',
-                        8.11
-                    ],
-                    [
-                        'v10.0',
-                        5.33
-                    ],
-                    [
-                        'v6.0',
-                        1.06
-                    ],
-                    [
-                        'v7.0',
-                        0.5
-                    ]
-                ],
-                events: {
-                    click: function(e){
-                        gadgets.Hub.publish(PRODUCT_VERSION_CHANNEL, e.point.name);
+        series: currentSeriesData,
+        lang: {
+            backTitle : "Reset Charts"
+        },
+        exporting: {
+            buttons: {
+                customButton: {
+                    symbol: 'circle',
+                    symbolStrokeWidth: 1,
+                    symbolFill: '#a4edba',
+                    symbolStroke: '#330033',
+                    _titleKey: 'backTitle',
+                    onclick: function() {
+                        initChart(WSO2_PRODUCT_COMPONENT_ISSUES_DATA);
+                        gadgets.Hub.publish(PRODUCT_STATE_CHANNEL, "0");
                     }
                 }
-            }, {
-                name: 'IS',
-                id: 'IS',
-                data: [
-                    [
-                        'v40.0',
-                        5
-                    ],
-                    [
-                        'v41.0',
-                        4.32
-                    ],
-                    [
-                        'v42.0',
-                        3.68
-                    ],
-                    [
-                        'v39.0',
-                        2.96
-                    ],
-                    [
-                        'v36.0',
-                        2.53
-                    ],
-                    [
-                        'v43.0',
-                        1.45
-                    ],
-                    [
-                        'v31.0',
-                        1.24
-                    ],
-                    [
-                        'v35.0',
-                        0.85
-                    ],
-                    [
-                        'v38.0',
-                        0.6
-                    ],
-                    [
-                        'v32.0',
-                        0.55
-                    ],
-                    [
-                        'v37.0',
-                        0.38
-                    ],
-                    [
-                        'v33.0',
-                        0.19
-                    ],
-                    [
-                        'v34.0',
-                        0.14
-                    ],
-                    [
-                        'v30.0',
-                        0.14
-                    ]
-                ],
-                events: {
-                    click: function(e){
-                        gadgets.Hub.publish(PRODUCT_VERSION_CHANNEL, e.point.name);
-                    }
-                }
-            }, {
-                name: 'APIM',
-                id: 'APIM',
-                data: [
-                    [
-                        'v35',
-                        2.76
-                    ],
-                    [
-                        'v36',
-                        2.32
-                    ],
-                    [
-                        'v37',
-                        2.31
-                    ],
-                    [
-                        'v34',
-                        1.27
-                    ],
-                    [
-                        'v38',
-                        1.02
-                    ],
-                    [
-                        'v31',
-                        0.33
-                    ],
-                    [
-                        'v33',
-                        0.22
-                    ],
-                    [
-                        'v32',
-                        0.15
-                    ]
-                ],
-                events: {
-                    click: function(e){
-                        gadgets.Hub.publish(PRODUCT_VERSION_CHANNEL, e.point.name);
-                    }
-                }
-            }, {
-                name: 'DAS',
-                id: 'DAS',
-                data: [
-                    [
-                        'v8.0',
-                        2.56
-                    ],
-                    [
-                        'v7.1',
-                        0.77
-                    ],
-                    [
-                        'v5.1',
-                        0.42
-                    ],
-                    [
-                        'v5.0',
-                        0.3
-                    ],
-                    [
-                        'v6.1',
-                        0.29
-                    ],
-                    [
-                        'v7.0',
-                        0.26
-                    ],
-                    [
-                        'v6.2',
-                        0.17
-                    ]
-                ],
-                events: {
-                    click: function(e){
-                        gadgets.Hub.publish(PRODUCT_VERSION_CHANNEL, e.point.name);
-                    }
-                }
-            }, {
-                name: 'IOT',
-                id: 'IOT',
-                data: [
-                    [
-                        'v12.x',
-                        0.34
-                    ],
-                    [
-                        'v28',
-                        0.24
-                    ],
-                    [
-                        'v27',
-                        0.17
-                    ],
-                    [
-                        'v29',
-                        0.16
-                    ]
-                ],
-                events: {
-                    click: function(e){
-                        gadgets.Hub.publish(PRODUCT_VERSION_CHANNEL, e.point.name);
-                    }
-                }
-            }]
+            }   
         }
     });   
 }

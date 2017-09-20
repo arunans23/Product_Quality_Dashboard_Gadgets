@@ -1,10 +1,13 @@
+
+
+
 var WSO2_PRODUCT_COMPONENT_ISSUES_DATA;
 
 var currentState;
 
 var currentArea;
 var currentProduct;
-var currentProductVersion;
+var currentVersion;
 var currentComponent;
 var currentIssueType;
 var currentSeverity;
@@ -89,7 +92,7 @@ function callbackForStateChange(state){
                 colorByPoint: true, data: issuetypeSeriesData,
                 events: {
                     click: function(e){
-                        currentProduct = e.point.name;
+                        currentIssueType = e.point.name;
                         currentState = "15";
                         callbackForStateChange(currentState);
                     }
@@ -119,7 +122,7 @@ function callbackForStateChange(state){
                 colorByPoint: true, data: severitySeriesData,
                 events: {
                     click: function(e){
-                        currentProduct = e.point.name;
+                        currentSeverity = e.point.name;
                         currentState = "16";
                         callbackForStateChange(currentState);
                     }
@@ -588,6 +591,68 @@ function callbackForStateChange(state){
             break;
 
         case '12346':
+
+            //set the titles for the chart
+            currentMainChartTitle = "Products";
+            currentIssueTypeChartTitle = "Issue types";
+            currentSeverityChartTitle = "Severity";
+            currentPlatformChartTitle = "Platform";
+
+            
+
+            //set the data for the issuetype chart
+
+            productData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+            productIndex = productData.map(function(d){return d['name']}).indexOf(currentProduct);
+
+            componentData = productData[productIndex].components;
+            componentIndex = componentData.map(function(d){return d['name']}).indexOf(currentComponent);
+
+            issuetypeData = componentData[componentIndex].issuetype;
+
+            issuetypeSeriesData = [];
+            totalIssuetypeIssues = 0;
+
+            for(var i = 0; i < issuetypeData.length; i++){
+                name = issuetypeData[i].name;
+                y = issuetypeData[i].issues;
+
+                totalIssuetypeIssues += y;
+
+                issuetypeSeriesData.push({name: name, y: y});
+            }
+
+            currentIssueTypeChartData = [{
+                name: "Issue type", 
+                colorByPoint: true, data: issuetypeSeriesData,
+                events: {
+                    click: function(e){
+                        currentIssueType = e.point.name;
+                        currentState = "12345";
+                        callbackForStateChange(currentState);
+                    }
+                }
+            }]
+
+            currentIssueTypeChartSubtitle = "Total : " + totalIssuetypeIssues;
+
+
+            
+
+            //set the data for the platform chart
+            
+            
+            currentPlatformChartData = [{
+                    name: 'Platform',
+                    data: [totalMainIssues, 0]
+                }];
+            
+            
+            currentPlatformChartSubtitle = "Total : " + totalMainIssues;
+
+            createIssueTypeChart();
+            
+            createPlatformChart();
             break;
 
         case '123456':
@@ -819,6 +884,35 @@ function createPlatformChart(){
         }
         
     });
+}
+
+
+function setCurrentState(state){
+    currentState = state;
+}
+
+function setCurrentArea(area){
+    currentArea = area;
+}
+
+function setCurrentProduct(product){
+    currentProduct = product;
+}
+
+function setCurrentVersion(version){
+    currentVersion = version;
+}
+
+function setCurrentComponent(component){
+    currentComponent = component;
+}
+
+function setCurrentIssueType(issuetype){
+    currentIssueType = issuetype;
+}
+
+function setCurrentSeverity(severity){
+    currentSeverity = severity;
 }
 
 // function initChart(responseData){

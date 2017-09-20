@@ -47,37 +47,97 @@
                   <script type="text/javascript" src="js/data.js"></script>
                   <script type="text/javascript" src="js/app.js"></script>
                   
-                  
-                  <div class="row box">
-                        <p class='col-xs-2'>Area : </p>
-                        <select id='area-choice' class="col-xs-2">
-                            <option value='all'>All</option>
-                            <option value='WSO2 API Manager'>API Management</option>
-                            <option value='WSO2 Data Analytics Server'>Data Analytics</option>
-                            <option value='WSO2 Identity Server'>Idenetity and Access Management</option>
-                            <option value='WSO2 ESB'>Integration</option>
-                            <option value=''>IOT</option>
-                        </select>
-                        
-                        <p class='col-xs-2'>Product : </p>
-                        <select id='product-choice' class="col-xs-2">
-                            <option>Select from above</option>
-                        </select>
+                  <br>
+                  <div class="container-fluid">
+                    <div class="row box">
+                            <p class='col-xs-2'>Area : </p>
+                            <select id='area-choice' class="col-xs-2">
+                                <option value='all'>All</option>
+                                <option value='WSO2 API Manager'>API Management</option>
+                                <option value='WSO2 Data Analytics Server'>Data Analytics</option>
+                                <option value='WSO2 Identity Server'>Idenetity and Access Management</option>
+                                <option value='WSO2 ESB'>Integration</option>
+                                <option value=''>IOT</option>
+                            </select>
+                            
+                            <p class='col-xs-2'>Product : </p>
+                            <select id='product-choice' class="col-xs-2">
+                                <option>Select an Area</option>
+                            </select>
 
-                        <p class='col-xs-2'>Version : </p>
-                        <select id='version-choice' class="col-xs-2">
-                            <option>Select from above</option>
-                        </select>
-                        
-    
+                            <p class='col-xs-2'>Version : </p>
+                            <select id='version-choice' class="col-xs-2">
+                                <option>Select a Product</option>
+                            </select>
+                            
+        
+                    </div>
                   </div>
 
                   <script>
                     $(function(){
                         $("#area-choice").change(function(){
-                            var $dropdown = $(this);
+                            var $areaChoice = $(this);
 
-                            var vals = [];
+                            setCurrentState("1");
+                            setCurrentArea($areaChoice.val());
+                            callbackForStateChange("1");
+                            
+
+                            var products = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']});
+
+                            var $productChoice = $("#product-choice");
+                            
+                            $productChoice.empty();
+                            $productChoice.append("<option value='all'>All Products</option>");
+					        
+					        $.each(products, function(index, value) {
+						        $productChoice.append("<option value='" + value + "'>" + value + "</option>");
+					        });
+
+
+                        })
+
+                        $("#product-choice").change(function(){
+                            var $productChoice = $(this);
+
+                            setCurrentState("12");
+                            setCurrentProduct($productChoice.val());
+                            callbackForStateChange("12");
+
+                            var products = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']});
+                            var productIndex = products.indexOf(currentProduct);
+
+                            var versions = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex].version.map(function(d){return d['name']});
+
+                            var $versionChoice = $("#version-choice");
+
+                            $versionChoice.empty();
+                            $versionChoice.append("<option value='all'>All Versions</option>");
+					        
+					        $.each(versions, function(index, value) {
+						        $versionChoice.append("<option value='" + value + "'>" + value + "</option>");
+					        });
+
+
+                        })
+
+                        $("#version-choice").change(function(){
+                            var $versionChoice = $(this);
+
+                            setCurrentState("123");
+                            setCurrentVersion($versionChoice.val());
+                            callbackForStateChange("123");
+
+                            var products = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']});
+                            var productIndex = products.indexOf(currentProduct);
+
+                            var versions = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex].version.map(function(d){return d['name']}); 
+                            var versionIndex = versions.indexOf(currentVersion);
+
+                            var components = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex].components.map(function(d){return d['name']}); 
+
+                            
 
 
                         })

@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>
+            Sample Gadget
+        </title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Dashboard - WSO2 Engineering Consultant Profile</title>
+        <link href="libs/theme-wso2_1.0.0/images/favicon.png" rel="icon" type="image/png" sizes="16x16" />
+        <!-- WSO2 Theme -->
+        <link href="css/theme.css" rel="stylesheet" type="text/css" />
+        <!-- Select2 CSS -->
+        <link href="libs/select2_4.0.0/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="libs/animate/animate.css" rel="stylesheet" type="text/css" />
+        <!-- Font WSO2 CSS -->
+        <link href="libs/font-wso2_1.1.1/css/font-wso2.min.css" rel="stylesheet" type="text/css" />
+        <link href="libs/font-awesome_4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="libs/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+        <link href=css/theme-ie.min.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body class="sticky-footer">
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        
+        <div class="row generalDetails">
+            Check
+        </div>
+        <div class = "container-fluid dashboard">
+        <br>
+            <div class = "row box">
+                <div class = "col-lg-9 col-xs-12 content-wrap">
+                    <div class="content-header" id="main-graph-header">
+                        <h5>Summary</h5>
+                    </div>
+                    <div class="content-body">
+                        <div  id="main-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
+                        
+                        </div>
+                </div>
+
+                <div class = "col-lg-3 col-xs-12 content-wrap">
+                        <div class="content-header" id="platform-graph-header">
+                            <h5>Platform breakdown</h5>
+                        </div>
+                        <div class="content-body">
+                            <div  id="platform-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
+                            
+                        </div>
+                    </div>
+
+            </div>
+            <div class = "row box">
+                <div class="col-lg-3 col-xs-12 content-wrap">
+                    <div class="content-header" id="issuetype-graph-header">
+                        <h5>Issue Type breakdown</h5>
+                    </div>
+                    <div class="content-body">
+                        <div  id="issuetype-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 content-wrap">
+                    <div class="content-header" id="severity-graph-header">
+                        <h5>Severity Breakdown</h5>
+                    </div>
+                    <div class="content-body">
+                        <div  id="severity-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12 content-wrap">
+                    <div class="content-header" id="trend-graph-header">
+                        <h5>Historical trend</h5>
+                    </div>
+                    <div class="content-body">
+                        <div  id="trend-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script>
+            setTimeout(function(){
+                initCharts(response);
+            }, 1000);
+        </script>
+
+        <script src="code/highcharts.js"></script>
+        <script src="code/modules/data.js"></script>
+        <script src="code/modules/drilldown.js"></script>
+        <script src="code/modules/exporting.js"></script>
+
+        
+
+        <!-- jQuery (necessary for Bootstrap and WSO2 Theme JavaScript plugins) -->
+        <script src="libs/jquery_1.11.0/jquery-1.11.3.min.js"></script>
+        <script src="libs/select2_4.0.0/js/select2.full.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="libs/bootstrap_3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/theme-wso2.min.js"></script>
+        <script src="libs/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="libs/tinymce_4.2.3/tinymce.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/dashboard.js"></script>
+        
+    </body>
+</html>

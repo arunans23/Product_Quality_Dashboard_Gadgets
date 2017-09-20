@@ -1,6 +1,6 @@
 {
-  "id": "check",
-  "title": "check",
+  "id": "check1",
+  "title": "check1",
   "type": "gadget",
   "thumbnail": "store://gadget/wso2-issues-by-product-and-component-github/images/index.png",
   "options": {},

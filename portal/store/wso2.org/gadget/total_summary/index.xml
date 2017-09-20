@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="Publisher" height="300" description="Publisher">
+        <Require feature="pubsub-2"/>
+        <Require feature="dynamic-height"/>
+    </ModulePrefs>
+    <Content type="html">
+        <![CDATA[
+      <head>
+   <!-- Bootstrap core CSS     -->
+    <!-- <link href="/portal/libs/bootstrap_3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Animation library for notifications   -->
+   <!--  <link href="/portal/libs/bootstrap_3.3.5/css/animate.min.css" rel="stylesheet"/> -->
+
+    <!--  Paper Dashboard core CSS    -->
+<!--     <link href=/portal/libs/bootstrap_3.3.5/css2/paper-dashboard.css" rel="stylesheet"/> -->
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <!-- <link href="/portal/libs/bootstrap_3.3.5/css2/demo.css" rel="stylesheet"/> -->
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <!--  Fonts and icons     -->
+ <!--    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="/portal/libs/bootstrap_3.3.5/css/themify-icons.css" rel="stylesheet"> -->
+
+</head>
+<body style="background-color:#f4f3ef;">
+
+<div class="container-fluid">
+            <div class="row" style="margin-top:30px;">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="icon-big icon-warning text-center">
+                                        <i class="ti-alert"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="numbers">
+                                        <p>Queued Patches</p>
+                                        <p id="queuedPatchCount" class="dashboard-top"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="queuePatches.html">
+                                <div class="footer">
+                                    <hr/>
+
+                                        <div class="stats">
+                                            <i class="ti-reload"></i> Load Details
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="icon-big icon-success text-center">
+                                        <i class="ti-check"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="numbers">
+                                        <p>Completed Patches</p>
+                                        <p id="completePatchCount" class="dashboard-top"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="completePatches.html">
+                                <div class="footer">
+                                    <hr/>
+
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Load Details
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="icon-big icon-info text-center">
+                                        <i class="ti-settings"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="numbers">
+                                        <p>In Process Patches</p>
+                                        <p id="inProcessPatchCount" class="dashboard-top"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="inProcessPatches.html">
+                                <div class="footer">
+                                    <hr/>
+
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Load Details
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-9">
+                                        <input type="text" id="config-demo" style="border:1px solid #F4F3EF; background-color: #FFFFFF;" class="form-control">
+                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button type="button" id="globalSubmit" class="btn btn-primary" style="margin-top:4px;">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="fullDiv" class="card card-map" style="background-color:#FFFFFF; height:730px;">
+                        <div class="header">
+                            <h4 class="title">Product Details and Stats</h4>
+                        </div>
+                        <hr>
+                        <div class="col-xs-3">
+                            <input id="iconified" class="form-control empty" type="text" placeholder="&#128269; Search Product" onkeyup="filter(this,'theList')" style="background-color:#f4f4f4; height:33px;" />
+                            <div  id="product" class="list-group" style="height:580px !important;overflow:hidden; overflow-y:scroll; margin-top:10px;"></div>
+                        </div>
+                        <div class="col-xs-9">
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary Graphs</a></li>
+                                    <li role="presentation"><a href="#age" aria-controls="profile" role="tab" data-toggle="tab">Queue Age Graph</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div id="prodcutDetails" style="height:800px;display:none;">
+                                                    <div class="header" style="margin-top:-30px;">
+                                                        <button class="pull-right" onclick="closeDiv()" style="background-color:transparent;border:none; margin-top:30px;">Close <i class="ti-close"></i></button>
+                                                        <h4 id="productName">Selected Product Details</h4>
+
+
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-xs-3">
+                                                            <center>
+                                                                <div class="alert alert-warning alert-with-icon">
+                                                                    <span data-notify="icon" class="ti-bell" style=""></span>
+                                                                    <span data-notify="message" style="font-size:20px;"><b id="pQueued">45</b> patches in Queue</span>
+                                                                </div>
+                                                            </center>
+                                                        </div>
+                                                        <div class="col-xs-3">
+                                                            <center>
+                                                                <div class="alert alert-success alert-with-icon">
+                                                                    <span data-notify="icon" class="ti-check" style=""></span>
+                                                                    <span data-notify="message" style="font-size:20px;"><b id="pComplete">25</b> are Completed</span>
+                                                                </div>
+                                                            </center>
+                                                        </div>
+                                                        <div class="col-xs-3">
+                                                            <center>
+                                                                <div class="alert alert-info alert-with-icon">
+                                                                    <span data-notify="icon" class="ti-settings" style=""></span>
+                                                                    <span data-notify="message" style="font-size:20px;"><b id="pProcess">145</b> in Developing</span>
+                                                                </div>
+                                                            </center>
+                                                        </div>
+                                                        <div class="col-xs-3">
+                                                            <center>
+                                                                <div class="alert alert-danger alert-with-icon">
+                                                                    <span data-notify="icon" class="ti-trash" style=""></span>
+                                                                    <span data-notify="message" style="font-size:20px;"><b id="pDeleted">15</b> patches Deleted</span>
+                                                                </div>
+                                                            </center>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-2">
+                                                                    <select class="form-control" id="getType" style="width:150px;" onchange="changeDurationGraph(this.value)">
+                                                                        <option value="year">Yearly</option>
+                                                                        <option value="quarter">Quarterly</option>
+                                                                        <option value="month">Monthly</option>
+                                                                        <option value="week">Weekly</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xs-1">
+                                                                    <select class="form-control" id="getYear" style="width:150px; display:none;" onchange="changeDurationGraph('para')">
+                                                                        <option value="2015">2015</option>
+                                                                        <option value="2016">2016</option>
+                                                                        <option value="2017">2017</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xs-10"></div>
+                                                            </div>
+                                                            <div id="container" style="height:450px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <select class="form-control" style="width:150px;" onchange="changeGraph(this.value)">
+                                                    <option value="column">Column Chart</option>
+                                                    <option value="bar">Bar Chart</option>
+                                                    <option value="pie">Pie Chart</option>
+                                                </select>
+                                                <div id="graphDiv" style="min-width: 310px; height: 430px; margin: 0 auto"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane with-3d-shadow with-transitions" id="age">
+                                        <div id="ageContainer" style="min-width: 310px; height: 500px; margin: 0 auto; margin-top:30px;"></div>
+                                        <div class="row" id="stackTab" style="margin-top:40px;display: none;">
+                                            <hr>
+                                            <div class="col-xs-12" style="margin-top:40px;">
+                                                <div class="header" style="margin-top:-30px;">
+                                                    <button class="pull-right" onclick="closeDiv()" style="background-color:transparent;border:none; margin-top:30px;">Close <i class="ti-close"></i></button>
+                                                </div>
+                                                <div id="stackBar" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+<!--   Core JS Files   -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/hicharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+
+<script type="text/javascript" src="js/require.js"></script>
+<script src="js/xml2json.js"></script>
+<script src="js/searchProduct.js"></script>
+<script src="js/loadDashboardCounts.js"></script>
+<script src="js/chartGenerate.js"></script>
+<script src="js/productWiseAnalysis.js"></script>
+<script src="js/ageGraph.js"></script>
+</body>
+
+        ]]>
+    </Content>
+</Module>

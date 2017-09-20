@@ -1,0 +1,54 @@
+{
+  "id": "pqd-combined",
+  "title": "Summary",
+  "type": "gadget",
+  "thumbnail": "store://gadget/pqd-combined/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/pqd-combined/index.xml"
+  },
+  "notify": {
+    "product": {
+      "type": "product",
+      "description": "This notifies the selected product"
+    },
+    "product-version": {
+      "type": "product-version",
+      "description": "This notifies the selected product version"
+    },
+    "product-state": {
+      "type": "product-state",
+      "description": "This notifies the selected product state"
+    },
+    "issues-data": {
+      "type": "issues-data",
+      "description": "This notifies the loaded data"
+    }
+  },
+  "listen": {
+    "component-state": {
+      "type": "component-state",
+      "description": "This listens to the component-state channel"
+    },
+    "issuetype-state": {
+      "type" : "issuetype-state",
+      "description": "This listens to the issuetype state channel"
+    },
+    "severity-state": {
+      "type": "severity-state",
+      "description": "This listens to the severity state channel"
+    },
+    "component": {
+      "type" : "component",
+      "description": "This listens to the component channel"
+    },
+    "issue-type": {
+      "type": "issue-type",
+      "description": "This listens to the issuetype channel"
+    },
+    "severity": {
+      "type": "severity",
+      "description": "This listens to the severity channel"
+    }
+  }
+}

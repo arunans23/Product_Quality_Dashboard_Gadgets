@@ -1,0 +1,50 @@
+{
+  "id": "pqd-piechart-component-jira",
+  "title": "Component jira issues",
+  "type": "gadget",
+  "thumbnail": "store://gadget/pqd-issues-by-component-and-version-jira/images/index.png",
+  "options": {},
+  "data": {
+    "url": "store://gadget/pqd-issues-by-component-and-version-jira/index.xml"
+  },
+  "notify": {
+    "component": {
+      "type": "component",
+      "description": "This notifies the selected component"
+    },
+    "component-state": {
+      "type": "component-state",
+      "description": "This notifies the selected component state"
+    }
+  },
+  "listen": {
+    "product":{
+      "type": "product",
+      "description": "Used to listen to product channel"
+    },
+    "product-state":{
+      "type": "product-state",
+      "description": "Used to listen to product state channel"
+    },
+    "issue-type":{
+      "type": "issue-type",
+      "description": "Used to listen to issue type channel"
+    },
+    "issuetype-state":{
+      "type": "issuetype-state",
+      "description": "Used to listen to issue type state channel"
+    },
+    "severity": {
+      "type": "severity",
+      "description": "Used to listen to the severity channel"
+    },
+    "severity-state": {
+      "type": "severity-state",
+      "description": "Used to listen to the severity-state channel"
+    },
+    "issues-data": {
+      "type": "issues-data",
+      "description": "This listens to the issues data"
+    }
+  }
+}

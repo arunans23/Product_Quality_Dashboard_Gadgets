@@ -1,0 +1,16 @@
+{
+    "id": "total_summary",
+    "title": "Total Patch Summary",
+    "type": "gadget",
+    "thumbnail": "store://gadget/total_summary/total.png",
+    "category": "Publishers",
+    "data": {
+        "url": "store://gadget/total_summary/index.xml"
+    },
+    "notify": {
+        "publisher": {
+            "type": "message",
+            "description": "This notifies message generated in publisher"
+        }
+    }
+}

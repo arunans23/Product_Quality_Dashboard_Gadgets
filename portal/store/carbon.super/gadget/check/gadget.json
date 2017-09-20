@@ -1,24 +1,17 @@
 {
-  "id": "check1",
-  "title": "check1",
+  "id": "pqd-issues-summary",
+  "title": "Issues Summary",
   "type": "gadget",
-  "thumbnail": "store://gadget/wso2-issues-by-product-and-component-github/images/index.png",
+  "thumbnail": "store://gadget/check/images/index.png",
   "options": {},
   "data": {
     "url": "store://gadget/check/index.xml"
   },
   "notify": {
-    "publisher": {
-      "type": "message",
-      "description": "This notifies the selected product"
-    }
+    
   },
 
-"listen":{
-	"subscriber":{
-		"type": "message",
-		"description":"This checks"		
-}
-	}
+  "listen":{
+    }
   
 }

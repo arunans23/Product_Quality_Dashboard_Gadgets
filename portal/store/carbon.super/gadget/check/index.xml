@@ -49,28 +49,35 @@
                   
                   <br>
                   <div class="container-fluid">
-                    <div class="row box">
-                            <p class='col-xs-2'>Area : </p>
-                            <select id='area-choice' class="col-xs-2">
-                                <option value='all'>All</option>
-                                <option value='WSO2 API Manager'>API Management</option>
-                                <option value='WSO2 Data Analytics Server'>Data Analytics</option>
-                                <option value='WSO2 Identity Server'>Idenetity and Access Management</option>
-                                <option value='WSO2 ESB'>Integration</option>
-                                <option value=''>IOT</option>
-                            </select>
-                            
-                            <p class='col-xs-2'>Product : </p>
-                            <select id='product-choice' class="col-xs-2">
-                                <option>Select an Area</option>
-                            </select>
-
-                            <p class='col-xs-2'>Version : </p>
-                            <select id='version-choice' class="col-xs-2">
-                                <option>Select a Product</option>
-                            </select>
-                            
-        
+                    
+                    <div class="content-wrap">
+                        <h4 style="padding:10px; text-align:center">Click on the following dropdowns to change the graphs</h4>
+                        <div class="row">
+                            <div class="col-md-4"  style="text-align:center;">
+                                <h4>Area</h4>
+                                <select id='area-choice' style="width:300px; padding: 5px;">
+                                    <option value='all'>All</option>
+                                    <option value='WSO2 API Manager'>API Management</option>
+                                    <option value='WSO2 Data Analytics Server'>Data Analytics</option>
+                                    <option value='WSO2 Identity Server'>Idenetity and Access Management</option>
+                                    <option value='WSO2 ESB'>Integration</option>
+                                    
+                                </select>
+                            </div>    
+                            <div class="col-md-4"  style="text-align:center;">
+                                <h4>Product</h4>
+                                <select id='product-choice' style="width:300px; padding: 5px;">
+                                    <option>Select an Area</option>
+                                </select>
+                            </div>    
+                            <div class="col-md-4" style="text-align:center;">
+                                <h4>Version</h4>
+                                <select id='version-choice' style="width:300px; padding: 5px;">
+                                    <option>Select a Product</option>
+                                </select>
+                            </div>   
+                        </div>
+                        <br>
                     </div>
                   </div>
 
@@ -79,45 +86,78 @@
                         $("#area-choice").change(function(){
                             var $areaChoice = $(this);
 
-                            setCurrentState("1");
-                            setCurrentArea($areaChoice.val());
-                            callbackForStateChange("1");
-                            
+                            if($areaChoice.val() == 'all'){
+                                setCurrentState("0");
+                                setCurrentArea(null);
+                                callbackForStateChange("0");
 
-                            var products = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']});
+                                var $productChoice = $("#product-choice");
 
-                            var $productChoice = $("#product-choice");
-                            
-                            $productChoice.empty();
-                            $productChoice.append("<option value='all'>All Products</option>");
-					        
-					        $.each(products, function(index, value) {
-						        $productChoice.append("<option value='" + value + "'>" + value + "</option>");
-					        });
+                                $productChoice.empty();
+                                $productChoice.append("<option value=''>Select an area</option>");
+
+                                var $versionChoice = $("#version-choice");
+
+                                $versionChoice.empty();
+                                $versionChoice.append("<option value=''>Select a product</option>");
 
 
-                        })
+                            } else {
+                                setCurrentState("1");
+                                setCurrentArea($areaChoice.val());
+                                callbackForStateChange("1");
+                                
+
+                                var productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentArea);
+                                var products = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.slice(productIndex, productIndex + 1).map(function(d){return d['name']});
+
+                                var $productChoice = $("#product-choice");
+                                
+                                $productChoice.empty();
+                                $productChoice.append("<option value='all'>All Products</option>");
+                                
+                                $.each(products, function(index, value) {
+                                    $productChoice.append("<option value='" + value + "'>" + value + "</option>");
+                                });
+
+                                }
+                        
+                             })
 
                         $("#product-choice").change(function(){
                             var $productChoice = $(this);
 
-                            setCurrentState("12");
-                            setCurrentProduct($productChoice.val());
-                            callbackForStateChange("12");
+                            if($productChoice.val() == 'all'){
+                                setCurrentState("1");
+                                setCurrentProduct(null);
+                                callbackForStateChange("1");
 
-                            var products = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']});
-                            var productIndex = products.indexOf(currentProduct);
+                                var $versionChoice = $("#version-choice");
 
-                            var versions = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex].version.map(function(d){return d['name']});
+                                $versionChoice.empty();
+                                $versionChoice.append("<option value='all'>Select a version</option>");
 
-                            var $versionChoice = $("#version-choice");
+                            } else {
+                                setCurrentState("12");
+                                setCurrentProduct($productChoice.val());
+                                callbackForStateChange("12");
 
-                            $versionChoice.empty();
-                            $versionChoice.append("<option value='all'>All Versions</option>");
-					        
-					        $.each(versions, function(index, value) {
-						        $versionChoice.append("<option value='" + value + "'>" + value + "</option>");
-					        });
+                                var products = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']});
+                                var productIndex = products.indexOf(currentProduct);
+
+                                var versions = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex].version.map(function(d){return d['name']});
+
+                                var $versionChoice = $("#version-choice");
+
+                                $versionChoice.empty();
+                                $versionChoice.append("<option value='all'>All Versions</option>");
+                                
+                                $.each(versions, function(index, value) {
+                                    $versionChoice.append("<option value='" + value + "'>" + value + "</option>");
+                                });
+                            }
+
+                            
 
 
                         })
@@ -148,54 +188,64 @@
                   <div class = "container-fluid ">
                   <br>
                       <div class = "row">
-                          <div class = "col-xs-7  content-wrap">
+                          <div class = "col-md-8">
+                            <div class="content-wrap">
                               <div class="content-header" id="main-graph-header">
-                                  <h5>Summary</h5>
+                                  <h5>Area Breakdown Chart</h5>
                               </div>
                               <div class="content-body">
                                   <div  id="main-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
                                   
-                                  </div>
+                                </div>
+
+                            </div>
                           </div>
 
-                          <div class = "col-xs-4 content-wrap">
+                          <div class = "col-md-4">
+                            <div class="content-wrap">
                                   <div class="content-header" id="platform-graph-header">
-                                      <h5>Platform breakdown</h5>
+                                      <h5>Platform Breakdown Chart</h5>
                                   </div>
                                   <div class="content-body">
                                       <div  id="platform-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
                                       
                                   </div>
                               </div>
-
+                            </div>
                       </div>
                       <div class = "row box">
-                          <div class="col-xs-3 content-wrap">
+                          <div class="col-md-3">
+                            <div class="content-wrap">
                               <div class="content-header" id="issuetype-graph-header">
-                                  <h5>Issue Type breakdown</h5>
+                                  <h5>Issue Type Breakdown Chart</h5>
                               </div>
                               <div class="content-body">
                                   <div  id="issuetype-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
                                   
                               </div>
+                            </div>
                           </div>
-                          <div class="col-xs-3 content-wrap">
+                          <div class="col-md-3">
+                            <div class="content-wrap">
                               <div class="content-header" id="severity-graph-header">
-                                  <h5>Severity Breakdown</h5>
+                                  <h5>Severity Breakdown Chart</h5>
                               </div>
                               <div class="content-body">
                                   <div  id="severity-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
                                   
                               </div>
+                            </div>
                           </div>
-                          <div class="col-xs-5 content-wrap">
+                          <div class="col-md-6">
+                            <div class="content-wrap">
                               <div class="content-header" id="trend-graph-header">
-                                  <h5>Historical trend</h5>
+                                  <h5>Historical Trend</h5>
                               </div>
                               <div class="content-body">
                                   <div  id="trend-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
                                   
                               </div>
+                            </div>
                           </div>
                       </div>
                   </div>

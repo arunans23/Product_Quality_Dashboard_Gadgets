@@ -19,6 +19,10 @@
                   <meta charset="utf-8">
                   <meta http-equiv="X-UA-Compatible" content="IE=edge">
                   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+                    <link href="/portal/libs/bootstrap_3.3.5/css/daterangepicker.css" rel="stylesheet"/>
+
                   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
                   <title>Dashboard - WSO2 Engineering Consultant Profile</title>
                   <link href="libs/theme-wso2_1.0.0/images/favicon.png" rel="icon" type="image/png" sizes="16x16" />
@@ -41,11 +45,14 @@
                   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
                   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
                   <![endif]-->
+
+                  
               </head>
               
               <body class="sticky-footer">
                   <script type="text/javascript" src="js/data.js"></script>
                   <script type="text/javascript" src="js/app.js"></script>
+                  <script type="text/javascript" src="js/app1.js"></script>
                   
                   <br>
                   <div class="container-fluid">
@@ -213,7 +220,7 @@
                               </div>
                             </div>
                       </div>
-                      <div class = "row box">
+                      <div class = "row">
                           <div class="col-md-3">
                             <div class="content-wrap">
                               <div class="content-header" id="issuetype-graph-header">
@@ -242,7 +249,37 @@
                                   <h5>Historical Trend</h5>
                               </div>
                               <div class="content-body">
-                                  <div  id="trend-chart-container" style="min-width: window.document.body.scrollWidth; height: window.document.body.scrollHeight - 40; margin: 0 auto"></div>
+                                  <!-- <div  id="trend-chart-container" style="min-width: window.document.body.scrollWidth; height: 375; margin: 0 auto"> -->
+                                    <!-- <h3 style="text-align:center;">Currently no data to show</h3> -->
+
+                                    <div class="container-fluid">
+                                        <div class="row" style="padding-left:100"
+                                            
+                                                
+                                                    
+                                                        
+                                                            
+                                                            <div id="reportrange" class="col-xs-6" style="background: #fff; cursor: pointer; border: 1px solid #ccc;">
+                                                                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                                                <span></span> <b class="caret"></b>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <button id="monthlyBtn" type="button" class="">Monthly</button>
+                                                                <button id="quarterlyBtn" type="button" class="">Quarterly</button>
+                                                                <button id="yearlyBtn" type="button" class="">Yearly</button>
+                                                            </div>
+                                                       
+                                                    
+                                               
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div id="trend-chart-container" style="min-width: 310px; max-width: 600px; height: 375px; margin: 0 auto"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  <!-- </div> -->
                                   
                               </div>
                             </div>
@@ -274,7 +311,67 @@
                   <script src="libs/tinymce_4.2.3/tinymce.min.js"></script>
                   <script src="js/script.js"></script>
                   <script src="js/dashboard.js"></script>
+
+                  <!--   Core JS Files   -->
+                    <script src="js/jquery-3.2.1.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                    <script type="text/javascript" src="js/moment.js"></script>
+                    <script type="text/javascript" src="js/daterangepicker.js"></script>
                   
+                  <script type="text/javascript">
+                    $('input[name="daterange"]').daterangepicker();
+                    $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+
+                        var startDate = picker.startDate.format('YYYY-MM-DD');
+                        var endDate = picker.endDate.format('YYYY-MM-DD');
+                        <!--getIssueHistoryData("Product",startDate,endDate);-->
+                    console.log(startDate);
+                    console.log(endDate);
+                    callbackForDummy(startDate);
+                    });
+
+                    $('#monthlyBtn').click(function(){
+                        callbackForDummyMonthly();
+                    });
+                    $('#quarterlyBtn').click(function(){
+                        callbackForDummyQuarterly();
+                    });
+                    $('#yearlyBtn').click(function(){
+                        callbackForDummyYearly();
+                    });
+                </script>
+
+                <script type="text/javascript">
+                $(function() {
+
+                    var start = moment().subtract(29, 'days');
+                    var end = moment();
+
+                    function cb(start, end) {
+                        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                    }
+
+                    $('#reportrange').daterangepicker({
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                        <!--'Today': [moment(), moment()],-->
+                        <!--'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],-->
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                        }
+                    }, cb);
+
+                    cb(start, end);
+
+                });
+                </script>
+                <script>
+                debugger;
+                    initChart();
+                </script>
               </body>
           </html>
 

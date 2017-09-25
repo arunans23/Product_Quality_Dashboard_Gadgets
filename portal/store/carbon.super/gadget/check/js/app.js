@@ -12,6 +12,9 @@ var currentComponent;
 var currentIssueType;
 var currentSeverity;
 
+var currentProductId;
+var currentComponentId;
+
 
 
 var currentMainChartData;
@@ -31,10 +34,19 @@ var currentPlatformChartSubtitle;
 
 var dummyArea = ["Integration", "Identity and Access Management", "API Management", "Data Analytics"];
 
+//sajinie work ---------------
+var currentTrendDummyData;
+var subTitle = 'For Last 30 Days';
+var startDate;
+var endDate;
+var both;
+
+//sajinie---------------------
+
 
 //this is the callback function for state change
 function callbackForStateChange(state){
-    debugger;
+    
     switch(state){
         case '0':
 
@@ -90,21 +102,73 @@ function callbackForStateChange(state){
             currentIssueTypeChartData = [{
                 name: "Issue type", 
                 colorByPoint: true, data: issuetypeSeriesData,
-                // events: {
-                //     click: function(e){
-                //         currentIssueType = e.point.name;
-                //         currentState = "15";
-                //         callbackForStateChange(currentState);
-                //     }
-                // }
+                events: {
+                    click: function(e){
+                        currentIssueType = e.point.name;
+                        currentState = "05";
+                        callbackForStateChange(currentState);
+                    }
+                }
             }]
 
             currentIssueTypeChartTitle = "Total : " + totalIssuetypeIssues;
-            currentIssueTypeChartSubtitle = null;
+            currentIssueTypeChartSubtitle = "Click on the slices to view severity breakdown";
 
 
             //set the data for the severity chart
             severityData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.severity;
+
+            severitySeriesData = [];
+            totalSeverityIssues = 0;
+
+            for(var i = 0; i < severityData.length; i++){
+                name = severityData[i].name;
+                y = severityData[i].issues;
+
+                totalSeverityIssues += y;
+
+                severitySeriesData.push({name: name, y: y});
+            }
+
+            currentSeverityChartData = [{
+                name: "Severity",
+                colorByPoint: true, data: severitySeriesData,
+                events: {
+                    click: function(e){
+                        currentSeverity = e.point.name;
+                        currentState = "06";
+                        callbackForStateChange(currentState);
+                    }
+                }
+            }]
+
+            currentSeverityChartTitle = "Total : " + totalSeverityIssues;
+            currentSeverityChartSubtitle = "Click on the slices to view issue type breakdown";
+
+            //set the data for the platform chart
+            
+            
+            currentPlatformChartData = [{
+                    name: 'Platform',
+                    data: [totalMainIssues, 0]
+                }];
+            
+            currentPlatformChartTitle = "Total : " + totalMainIssues;
+            currentPlatformChartSubtitle = null;
+            
+            createCharts();
+
+            break;
+
+        case '05':
+            
+            
+
+            //set the data for the severity chart
+            issueTypeData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.issuetype;
+            issueTypeIndex = issueTypeData.map(function(d){return d['name']}).indexOf(currentIssueType);
+
+            severityData = issueTypeData[issueTypeIndex].severity;
 
             severitySeriesData = [];
             totalSeverityIssues = 0;
@@ -138,14 +202,64 @@ function callbackForStateChange(state){
             
             currentPlatformChartData = [{
                     name: 'Platform',
-                    data: [totalMainIssues, 0]
+                    data: [totalSeverityIssues, 0]
                 }];
             
-            currentPlatformChartTitle = "Total : " + totalMainIssues;
+            currentPlatformChartTitle = "Total : " + totalSeverityIssues;
             currentPlatformChartSubtitle = null;
-            
-            createCharts();
 
+            createSeverityChart();
+            createPlatformChart();
+                break;
+
+        case '06':
+
+            //set the data for the issuetype chart
+            severityData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.severity;
+            severityIndex = severityData.map(function(d){return d['name']}).indexOf(currentSeverity);
+            issuetypeData = severityData[severityIndex].issuetype;
+            
+            issuetypeSeriesData = [];
+            totalIssuetypeIssues = 0;
+            
+            for(var i = 0; i < issuetypeData.length; i++){
+                name = issuetypeData[i].name;
+                y = issuetypeData[i].issues;
+            
+                totalIssuetypeIssues += y;
+            
+                issuetypeSeriesData.push({name: name, y: y});
+            }
+            
+            currentIssueTypeChartData = [{
+                name: "Issue type", 
+                colorByPoint: true, data: issuetypeSeriesData,
+                // events: {
+                //     click: function(e){
+                //         currentIssueType = e.point.name;
+                //         currentState = "05";
+                //         callbackForStateChange(currentState);
+                //     }
+                // }
+            }]
+            
+            currentIssueTypeChartTitle = "Total : " + totalIssuetypeIssues;
+            currentIssueTypeChartSubtitle = null;
+
+            //set the data for the platform chart
+            
+            
+            currentPlatformChartData = [{
+                name: 'Platform',
+                data: [totalIssuetypeIssues, 0]
+            }];
+        
+            currentPlatformChartTitle = "Total : " + totalIssuetypeIssues;
+            currentPlatformChartSubtitle = null;
+
+            createIssueTypeChart();
+            createPlatformChart();
+            
             break;
         
         case '1':
@@ -183,7 +297,10 @@ function callbackForStateChange(state){
             currentMainChartSubtitle = null;
 
             //set the data for the issuetype chart
-            issuetypeData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.issuetype;
+
+            
+
+            issuetypeData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex].issuetype;
 
             issuetypeSeriesData = [];
             totalIssuetypeIssues = 0;
@@ -200,21 +317,21 @@ function callbackForStateChange(state){
             currentIssueTypeChartData = [{
                 name: "Issue type", 
                 colorByPoint: true, data: issuetypeSeriesData,
-                // events: {
-                //     click: function(e){
-                //         currentIssueType = e.point.name;
-                //         currentState = "15";
-                //         callbackForStateChange(currentState);
-                //     }
-                // }
+                events: {
+                    click: function(e){
+                        currentIssueType = e.point.name;
+                        currentState = "15";
+                        callbackForStateChange(currentState);
+                    }
+                }
             }]
             
             currentIssueTypeChartTitle = "Total : " + totalIssuetypeIssues;
-            currentIssueTypeChartSubtitle = null;
+            currentIssueTypeChartSubtitle = "Click on the slices to view severity breakdown";
 
 
             //set the data for the severity chart
-            severityData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.severity;
+            severityData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex].severity;
 
             severitySeriesData = [];
             totalSeverityIssues = 0;
@@ -231,17 +348,17 @@ function callbackForStateChange(state){
             currentSeverityChartData = [{
                 name: "Severity",
                 colorByPoint: true, data: severitySeriesData,
-                // events: {
-                //     click: function(e){
-                //         currentSeverity = e.point.name;
-                //         currentState = "16";
-                //         callbackForStateChange(currentState);
-                //     }
-                // }
+                events: {
+                    click: function(e){
+                        currentSeverity = e.point.name;
+                        currentState = "16";
+                        callbackForStateChange(currentState);
+                    }
+                }
             }]
 
             currentSeverityChartTitle = "Total : " + totalSeverityIssues;
-            currentSeverityChartSubtitle = null;
+            currentSeverityChartSubtitle = "Click on the slices to view issue type breakdown";
 
             //set the data for the platform chart
             
@@ -330,7 +447,7 @@ function callbackForStateChange(state){
             }]
 
             currentIssueTypeChartTitle = "Total : " + totalIssuetypeIssues;
-            currentIssueTypeChartSubtitle = null;
+            currentIssueTypeChartSubtitle = "Click on the slices to view severity breakdown";
 
 
             //set the data for the severity chart
@@ -364,7 +481,7 @@ function callbackForStateChange(state){
             }]
 
             currentSeverityChartTitle = "Total : " + totalSeverityIssues;
-            currentSeverityChartSubtitle = null;
+            currentSeverityChartSubtitle = "Click on the slices to view issue type breakdown";
 
             //set the data for the platform chart
             
@@ -381,6 +498,118 @@ function callbackForStateChange(state){
             createCharts();
 
             break;
+
+        case '15':
+                
+            
+
+                //set the data for the severity chart
+            productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentArea);
+            productData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.slice(productIndex, productIndex+1);
+
+            currentProductData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex];
+                
+            issueTypeData = currentProductData.issuetype;
+            issueTypeIndex = issueTypeData.map(function(d){return d['name']}).indexOf(currentIssueType);
+
+            severityData = issueTypeData[issueTypeIndex].severity;
+
+            severitySeriesData = [];
+            totalSeverityIssues = 0;
+
+            for(var i = 0; i < severityData.length; i++){
+                name = severityData[i].name;
+                y = severityData[i].issues;
+
+                totalSeverityIssues += y;
+
+                severitySeriesData.push({name: name, y: y});
+            }
+
+            currentSeverityChartData = [{
+                name: "Severity",
+                colorByPoint: true, data: severitySeriesData,
+                // events: {
+                //     click: function(e){
+                //         currentSeverity = e.point.name;
+                //         currentState = "16";
+                //         callbackForStateChange(currentState);
+                //     }
+                // }
+            }]
+
+            currentSeverityChartTitle = "Total : " + totalSeverityIssues;
+            currentSeverityChartSubtitle = null;
+
+            //set the data for the platform chart
+            
+            
+            currentPlatformChartData = [{
+                    name: 'Platform',
+                    data: [totalSeverityIssues, 0]
+                }];
+            
+            currentPlatformChartTitle = "Total : " + totalSeverityIssues;
+            currentPlatformChartSubtitle = null;
+
+            createSeverityChart();
+            createPlatformChart();
+                break;
+
+        case '16':
+
+            //set the data for the issuetype chart
+
+            productIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentArea);
+            productData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.slice(productIndex, productIndex+1);
+
+            currentProductData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[productIndex];
+
+            severityData = currentProductData.severity;
+            severityIndex = severityData.map(function(d){return d['name']}).indexOf(currentSeverity);
+            issuetypeData = severityData[severityIndex].issuetype;
+            
+            issuetypeSeriesData = [];
+            totalIssuetypeIssues = 0;
+            
+            for(var i = 0; i < issuetypeData.length; i++){
+                name = issuetypeData[i].name;
+                y = issuetypeData[i].issues;
+            
+                totalIssuetypeIssues += y;
+            
+                issuetypeSeriesData.push({name: name, y: y});
+            }
+            
+            currentIssueTypeChartData = [{
+                name: "Issue type", 
+                colorByPoint: true, data: issuetypeSeriesData,
+                // events: {
+                //     click: function(e){
+                //         currentIssueType = e.point.name;
+                //         currentState = "05";
+                //         callbackForStateChange(currentState);
+                //     }
+                // }
+            }]
+            
+            currentIssueTypeChartTitle = "Total : " + totalIssuetypeIssues;
+            currentIssueTypeChartSubtitle = null;
+
+            //set the data for the platform chart
+            
+            
+            currentPlatformChartData = [{
+                name: 'Platform',
+                data: [totalIssuetypeIssues, 0]
+            }];
+        
+            currentPlatformChartTitle = "Total : " + totalIssuetypeIssues;
+            currentPlatformChartSubtitle = null;
+
+            createIssueTypeChart();
+            createPlatformChart();
+                break;
 
         case '123':
             
@@ -421,7 +650,7 @@ function callbackForStateChange(state){
 
             document.getElementById("main-graph-header").innerHTML = "<h5>Component Breakdown Chart</h5>";
             currentMainChartTitle = "Total : " + totalMainIssues;
-            currentMainChartSubtitle = "Click on the slices to view issue types and severity breakdown";
+            currentMainChartSubtitle = "Click on the columns to view issue types and severity breakdown";
             
 
             //set the data for the issuetype chart
@@ -449,17 +678,17 @@ function callbackForStateChange(state){
             currentIssueTypeChartData = [{
                 name: "Issue type", 
                 colorByPoint: true, data: issuetypeSeriesData,
-                // events: {
-                //     click: function(e){
-                //         currentIssueType = e.point.name;
-                //         currentState = "1235";
-                //         callbackForStateChange(currentState);
-                //     }
-                // }
+                events: {
+                    click: function(e){
+                        currentIssueType = e.point.name;
+                        currentState = "1235";
+                        callbackForStateChange(currentState);
+                    }
+                }
             }]
 
             currentIssueTypeChartTitle = "Total : " + totalIssuetypeIssues;
-            currentIssueTypeChartSubtitle = null;
+            currentIssueTypeChartSubtitle = "Click on the slices to view severity breakdown";
 
 
             //set the data for the severity chart
@@ -486,10 +715,65 @@ function callbackForStateChange(state){
             currentSeverityChartData = [{
                 name: "Severity",
                 colorByPoint: true, data: severitySeriesData,
+                events: {
+                    click: function(e){
+                        currentSeverity = e.point.name;
+                        currentState = "1236";
+                        callbackForStateChange(currentState);
+                    }
+                }
+            }]
+
+            currentSeverityChartTitle = "Total : " + totalSeverityIssues;
+            currentSeverityChartSubtitle = "Click on the slices to view issue type breakdown";
+
+            //set the data for the platform chart
+            
+            
+            currentPlatformChartData = [{
+                    name: 'Platform',
+                    data: [totalSeverityIssues, 0]
+                }];
+            
+            currentPlatformChartTitle = "Total : " + totalSeverityIssues;
+            currentPlatformChartSubtitle = null;
+
+            createCharts();
+            break;
+
+        case '1235':
+            debugger;
+            //set the data for the severity chart
+            productData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+            productIndex = productData.map(function(d){return d['name']}).indexOf(currentProduct);
+
+            versionData = productData[productIndex].version;
+            versionIndex = versionData.map(function(d){return d['name']}).indexOf(currentVersion);
+
+            issueTypeData = versionData[versionIndex].issuetype;
+            issueTypeIndex = issueTypeData.map(function(d){return d['name']}).indexOf(currentIssueType);
+
+            severityData = issueTypeData[issueTypeIndex].severity;
+
+            severitySeriesData = [];
+            totalSeverityIssues = 0;
+
+            for(var i = 0; i < severityData.length; i++){
+                name = severityData[i].name;
+                y = severityData[i].issues;
+
+                totalSeverityIssues += y;
+
+                severitySeriesData.push({name: name, y: y});
+            }
+
+            currentSeverityChartData = [{
+                name: "Severity",
+                colorByPoint: true, data: severitySeriesData,
                 // events: {
                 //     click: function(e){
                 //         currentSeverity = e.point.name;
-                //         currentState = "1236";
+                //         currentState = "16";
                 //         callbackForStateChange(currentState);
                 //     }
                 // }
@@ -503,14 +787,72 @@ function callbackForStateChange(state){
             
             currentPlatformChartData = [{
                     name: 'Platform',
-                    data: [totalMainIssues, 0]
+                    data: [totalSeverityIssues, 0]
                 }];
             
-            currentPlatformChartTitle = "Total : " + totalMainIssues;
+            currentPlatformChartTitle = "Total : " + totalSeverityIssues;
             currentPlatformChartSubtitle = null;
 
-            createCharts();
-            break;
+            createSeverityChart();
+            createPlatformChart();
+                break;
+
+        case '1236':
+            debugger;
+            //set the data for the issuetype chart
+
+            productData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products;
+            productIndex = productData.map(function(d){return d['name']}).indexOf(currentProduct);
+
+            versionData = productData[productIndex].version;
+            versionIndex = versionData.map(function(d){return d['name']}).indexOf(currentVersion);
+
+            severityData = versionData[versionIndex].severity;
+            severityIndex = severityData.map(function(d){return d['name']}).indexOf(currentSeverity);
+            
+            issuetypeData = severityData[severityIndex].issuetype;
+            
+            issuetypeSeriesData = [];
+            totalIssuetypeIssues = 0;
+            
+            for(var i = 0; i < issuetypeData.length; i++){
+                name = issuetypeData[i].name;
+                y = issuetypeData[i].issues;
+            
+                totalIssuetypeIssues += y;
+            
+                issuetypeSeriesData.push({name: name, y: y});
+            }
+            
+            currentIssueTypeChartData = [{
+                name: "Issue type", 
+                colorByPoint: true, data: issuetypeSeriesData,
+                // events: {
+                //     click: function(e){
+                //         currentIssueType = e.point.name;
+                //         currentState = "05";
+                //         callbackForStateChange(currentState);
+                //     }
+                // }
+            }]
+            
+            currentIssueTypeChartTitle = "Total : " + totalIssuetypeIssues;
+            currentIssueTypeChartSubtitle = null;
+
+            //set the data for the platform chart
+            
+            
+            currentPlatformChartData = [{
+                name: 'Platform',
+                data: [totalIssuetypeIssues, 0]
+            }];
+        
+            currentPlatformChartTitle = "Total : " + totalIssuetypeIssues;
+            currentPlatformChartSubtitle = null;
+
+            createIssueTypeChart();
+            createPlatformChart();
+                break;
 
         case '1234':
 
@@ -542,9 +884,10 @@ function callbackForStateChange(state){
 
             currentMainChartData = [{
                 name: "Components", 
-                colorByPoint: true, data: mainSeriesData,
+                data: mainSeriesData,
                 events: {
                     click: function(e){
+                        
                         currentComponent = e.point.name;
                         currentState = "1234";
                         callbackForStateChange(currentState);
@@ -633,10 +976,10 @@ function callbackForStateChange(state){
             
             currentPlatformChartData = [{
                     name: 'Platform',
-                    data: [totalMainIssues, 0]
+                    data: [totalIssuetypeIssues, 0]
                 }];
             
-            currentPlatformChartTitle = "Total : " + totalMainIssues;
+            currentPlatformChartTitle = "Total : " + totalIssuetypeIssues;
             currentPlatformChartSubtitle = null;
 
             createIssueTypeChart();
@@ -645,11 +988,9 @@ function callbackForStateChange(state){
 
             break;
 
+        
+
         case '12345':
-
-            
-
-            
 
 
             //set the data for the severity chart
@@ -696,10 +1037,10 @@ function callbackForStateChange(state){
             
             currentPlatformChartData = [{
                     name: 'Platform',
-                    data: [totalMainIssues, 0]
+                    data: [totalSeverityIssues, 0]
                 }];
             
-            currentPlatformChartTitle = "Total : " + totalMainIssues;
+            currentPlatformChartTitle = "Total : " + totalSeverityIssues;
             currentPlatformChartSubtitle = null;
 
             
@@ -708,7 +1049,7 @@ function callbackForStateChange(state){
             break;
 
         case '12346':
-
+            debugger;
             //set the titles for the chart
             currentMainChartTitle = "Products";
             currentIssueTypeChartTitle = "Issue types";
@@ -725,7 +1066,10 @@ function callbackForStateChange(state){
             componentData = productData[productIndex].components;
             componentIndex = componentData.map(function(d){return d['name']}).indexOf(currentComponent);
 
-            issuetypeData = componentData[componentIndex].issuetype;
+            severityData = componentData[componentIndex].severity;
+            severityIndex = severityData.map(function(d){return d['name']}).indexOf(currentSeverity);
+
+            issuetypeData = severityData[severityIndex].issuetype;
 
             issuetypeSeriesData = [];
             totalIssuetypeIssues = 0;
@@ -762,10 +1106,10 @@ function callbackForStateChange(state){
             
             currentPlatformChartData = [{
                     name: 'Platform',
-                    data: [totalMainIssues, 0]
+                    data: [totalIssuetypeIssues, 0]
                 }];
             
-            currentPlatformChartTitle = "Total : " + totalMainIssues;
+            currentPlatformChartTitle = "Total : " + totalIssuetypeIssues;
             currentPlatformChartSubtitle = null;
 
             createIssueTypeChart();
@@ -807,54 +1151,117 @@ function createCharts(){
 //graph type : bar
 function createMainChart(){
     //Create the chart
-    Highcharts.chart('main-chart-container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: currentMainChartTitle
-        },
-        subtitle: {
-            text: currentMainChartSubtitle
-        },
-        credits: {
-            enabled: false   
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'Total open issues'
-            }
-    
-        },
-        legend: {
-            enabled: false
-        },
-        plotOptions: {
-            series: {
-                borderWidth: 0,
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.y}'
-                }
-            }, column: {
-                maxPointWidth: 100
-            }
-        },
-    
-        tooltip: {
-            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b>'
-        },
-    
-        series: currentMainChartData,
 
-        exporting: {
-            enabled: true  
+        if (currentState == '123'){
+            Highcharts.chart('main-chart-container', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: currentMainChartTitle
+                },
+                subtitle: {
+                    text: currentMainChartSubtitle
+                },
+                credits: {
+                    enabled: false   
+                },
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    title: {
+                        text: 'Total open issues'
+                    }
+            
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    series: {
+                        borderWidth: 0,
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.y}'
+                        },
+                        allowPointSelect: true,
+                        states: {
+                            select: {
+                                color: null,
+                                borderWidth:5,
+                                borderColor:'Black'
+                            }
+                        }
+                    }, column: {
+                        maxPointWidth: 100
+                    }
+                },
+            
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b>'
+                },
+            
+                series: currentMainChartData,
+        
+                exporting: {
+                    enabled: true  
+                }
+            })
+        } else {
+            Highcharts.chart('main-chart-container', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: currentMainChartTitle
+                },
+                subtitle: {
+                    text: currentMainChartSubtitle
+                },
+                credits: {
+                    enabled: false   
+                },
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    title: {
+                        text: 'Total open issues'
+                    }
+            
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    series: {
+                        borderWidth: 0,
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.y}'
+                        }
+                    }, column: {
+                        maxPointWidth: 100
+                    }
+                },
+            
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b>'
+                },
+            
+                series: currentMainChartData,
+        
+                exporting: {
+                    enabled: true  
+                }
+            })
         }
-    })
+        
+    
+    
 }
 
 //this will create the issue type pie graph
@@ -873,11 +1280,12 @@ function createIssueTypeChart(){
            
         },
         legend: {
-        	layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'top',
-            y: 50,
-            width: 100
+        	// layout: 'vertical',
+            // align: 'right',
+            // verticalAlign: 'top',
+            // y: 50,
+            // width: 100
+            itemWidth: 150
         },
         subtitle: {
             text: currentIssueTypeChartSubtitle
@@ -923,11 +1331,13 @@ function createSeverityChart(){
             enabled: false   
         },
         legend: {
-        	layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'top',
-            y: 50,
-            width: 100
+        	// layout: 'vertical',
+            // align: 'right',
+            // verticalAlign: 'top',
+            // y: 50,
+            itemWidth: 150
+            // floating: false,
+            // backgroundColor: '#FCFFC5'
         },
         title: {
             text: currentSeverityChartTitle
@@ -1019,6 +1429,9 @@ function setCurrentArea(area){
 
 function setCurrentProduct(product){
     currentProduct = product;
+    currentProductIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+
+    currentProductId = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[currentProductIndex].id;
 }
 
 function setCurrentVersion(version){
@@ -1027,6 +1440,12 @@ function setCurrentVersion(version){
 
 function setCurrentComponent(component){
     currentComponent = component;
+
+    currentProductIndex = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products.map(function(d){return d['name']}).indexOf(currentProduct);
+    currentProductData = WSO2_PRODUCT_COMPONENT_ISSUES_DATA.products[currentProductIndex];
+
+    currentComponentIndex = currentProductData.components.map(function(d){return d['name']}).indexOf(currentComponent);
+    currentComponentId = currentProductData.components[currentComponentIndex].id;
 }
 
 function setCurrentIssueType(issuetype){
